@@ -66,10 +66,14 @@ function initGame() {
                     renderQuestion(obj); // set the black questions
 
                     // Render player HUD
+
                     renderPlayerName(obj);
                     renderPlayerCardsAmount(obj);
                     renderPlayerCards(obj);
                     renderPlayerCash(obj);
+
+
+                    // console.log(obj);
 
                     $('html').removeClass('is-loading'); // remove loader
                     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -96,7 +100,7 @@ function initGame() {
 function renderQuestion(obj) {
     var questionArr = obj['room']['questions'];
     var question = getCardFromId(questionArr[0]); // get first card id in array
-    $('[data-sb-game-deck-question]').text(question);
+    $('[data-sb-game-deck-question]').text(question.text);
 }
 
 //-----------------------------------------------------------------
@@ -107,23 +111,34 @@ function renderPlayerCards(obj) {
     var player = getPlayer(obj);
     var cardsArr = getPlayerActiveCards(player);
 
-    console.log(cardsArr);
+    // console.log('cards:'+getPlayerActiveCards(player));
 
     var html = '';
 
     for (playerCard in cardsArr) {
 
+        var card = cardsArr[playerCard];
+
+        // GROUP PROPERTIES
+        var isType = card.properties.type;
+        var isColor = 'is-'+card.properties.color;
+        var cardTypeAlias = card.properties.alias;
+        var cardValue = card.properties.value;
+        var isWild = card.wild ? 'is-wild' : ''; // individual card, not group
+        var cardText = card.text;
+
         html += '<li>';
-        html +=     '<div class="sb-card is-green is-wildX" data-wild="true" data-value="10">';
+        html +=     '<div class="sb-card '+isColor+' '+isWild+'" data-wild="true" data-value="10">';
         html +=         '<div class="sb-card-inner">'
         html +=             '<header class="sb-card-header">'
-        html +=                 '<span class="text">Answer</span>'
+        html +=                 '<span class="text">'+cardTypeAlias+
+        '</span>'
         html +=             '</header>'
         html +=             '<div class="sb-card-text">'
-        html +=                 '<p>'+cardsArr[playerCard]+'</p>'
+        html +=                 '<p>'+cardText+'</p>'
         html +=             '</div>'
         html +=             '<div class="sb-card-value">'
-        html +=                 '<span class="text">10</span>'
+        html +=                 '<span class="text">'+cardValue+'</span>'
         html +=             '</div>'
         html +=         '</div>'
         html +=     '</div>';
@@ -183,18 +198,16 @@ function getPlayer(obj) {
 
 function getPlayerActiveCards(player) {
     var playerCardsIDArr = player.cards_active;
-    var playerCardArr = [];
+    var playerCardsArr = [];
 
     for (card in playerCardsIDArr) {
 
         var cardID = playerCardsIDArr[card];
-
-        var cardName = getCardFromId(cardID); // FIX UP THE ID NAMING
-
-        playerCardArr.push(cardName); // change this from a name to an object
+        var cardObj = getCardFromId(cardID); // FIX UP THE ID NAMING
+        playerCardsArr.push(cardObj); // change this from a name to an object
     }
 
-    return playerCardArr;
+    return playerCardsArr;
 }
 
 //-----------------------------------------------------------------
@@ -216,13 +229,17 @@ function getCardFromId(id) {
 
     var type = cardTypes[cardTypeShortcode];
     var cardsArr = CARDS_LIBRARY[type]['cards']; // static library
+    var cardsProperties = CARDS_LIBRARY[type]['properties'];
 
-    // Search in the right card color type
+    // Search in the right card group
     for (card in cardsArr) {
         var card = cardsArr[card];
 
+        // is there a better way to do this?
+        card.properties = cardsProperties;
+
         if (card.id == id) {
-            return card.text;
+            return card;
         }
     }
 }
