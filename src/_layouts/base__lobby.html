@@ -1,0 +1,74 @@
+---
+layout: base
+---
+
+<!-- LOBBY -->
+<div id="sb-lobby" class="sb-menu-screen">
+	<div class="container">
+		<div class="row justify-content-center align-items-center text-center">
+			<div class="col-10">
+				<h1>SOBERFISH</h1>
+				<p class="mb-4">Are you ready to discover the true meaning of Soberfish, pathetic human?</p>
+				<p><button class="btn btn-primary" data-new-game>New Game</button></p>
+				<p><button class="btn btn-primary" data-join-game>Join Game</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- NEW GAME -->
+<div id="sb-lobby-new-game" class="sb-menu-screen" hidden>
+	<div class="container">
+		<div class="row justify-content-center align-items-center text-center">
+			<div class="col-10">
+				<h1>NEW GAME</h1>
+				<p>Get all your cretin friends to join using this passcode. They can join once a game has started too.</p>
+				<div class="sb-passcode mb-3" data-passcode></div>
+				<p><a href="/ready/" class="btn btn-primary" data-ready-btn>Excelsior!</a></p>
+
+				<!-- BACK -->
+				<br>
+				<button href="/" class="float-left btn-link" data-clear-room-id>Back</button>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- JOIN GAME -->
+<div id="sb-lobby-join-game" class="sb-menu-screen" hidden>
+	<div class="container">
+		<div class="row justify-content-center align-items-center text-center">
+			<div class="col-10">
+				<h1>JOIN GAME</h1>
+				<p>Enter the unique <b>6 digit</b> room code to join.</p>
+
+				<div class="sb-passcode is-small" data-join-passcode>
+					<i class="fa fa-genderless"></i>
+					<i class="fa fa-genderless"></i>
+					<i class="fa fa-genderless"></i>
+					<i class="fa fa-genderless"></i>
+				</div>
+
+				<ul class="block-grid-xs-3 text-center sb-number-pad" data-number-pad>
+					<li><button class="btn" value="1">1</button></li>
+					<li><button class="btn" value="2">2</button></li>
+					<li><button class="btn" value="3">3</button></li>
+					<li><button class="btn" value="4">4</button></li>
+					<li><button class="btn" value="5">5</button></li>
+					<li><button class="btn" value="6">6</button></li>
+					<li><button class="btn" value="7">7</button></li>
+					<li><button class="btn" value="8">8</button></li>
+					<li><button class="btn" value="9">9</button></li>
+					<li><button class="btn disabled"></li>
+					<li><button class="btn" value="0">0</button></li>
+				</ul>
+
+				<!-- BACK -->
+				<a href="/" class="float-left btn-link">Back</a>
+				<a class="float-right btn-link" data-number-pad-clear>Clear</a>
+
+			</div>
+		</div>
+	</div>
+</div>

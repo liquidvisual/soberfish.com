@@ -1,0 +1,207 @@
+---
+black_cards:
+  type: question
+  alias: Question
+  color: black
+  value: 100
+  cards:
+    - id: BLA1
+      text: Pitch to the group Britain's latest infomercial product.
+      wild: false
+      flagged: false
+      highlight: [infomercial]
+      highlight_type: null
+      required_answer_pick: 1
+      required_answer_type: answer
+      cost: 0
+
+    - id: BLA2
+      text: Using two of your cards as the premise, explain to the group what the
+        new Summer Blockbuster will be.
+      wild: false
+      flagged: false
+      highlight: [summer, blockbuster]
+      highlight_type: null
+      required_answer_type: words
+      required_answer_pick: 2
+      cost: 0
+
+    - id: BLA3
+      text: The best things in life are free. Why?
+      wild: false
+      flagged: false
+      highlight: [free]
+      highlight_type: null
+      required_answer_type: answer
+      required_answer_pick: 1
+      cost: 0
+
+blue_cards:
+    type: deflect
+    alias: Deflect
+    color: blue
+    value: 50
+    cards:
+      - id: BLU1
+        text: Mime it for me and you win.
+        wild: true
+        flagged: false
+        highlight: false
+        highlight_type: null
+
+      - id: BLU2
+        text: Okay, explain how exactly.
+        wild: false
+        flagged: false
+        highlight: [how]
+        highlight_type: answer
+
+      - id: BLU3
+        text: If you can explain it in two words.
+        wild: false
+        flagged: false
+        highlight: [two, words]
+        highlight_type: words
+
+red_cards:
+    type: bullshit
+    alias: Bullsh!t
+    color: red
+    value: 20
+    cards:
+      - id: RD1
+        text: That's incorrect. I'm taking all.
+        wild: false
+        flagged: false
+
+      - id: RD2
+        text: That's racist. I'm taking all.
+        wild: false
+        flagged: false
+
+      - id: RD3
+        text: That's so 90s. I'm taking all.
+        wild: false
+        flagged: false
+
+green_cards:
+    type: answer
+    alias: Answer
+    color: green
+    value: 10
+    cards:
+    - id: GR1
+      text: In your own words.
+      wild: true
+      flagged: false
+
+    - id: GR2
+      text: In your own words.
+      wild: true
+      flagged: false
+
+    - id: GR3
+      text: The economy.
+      wild: false
+      flagged: false
+
+    - id: GR4
+      text: It's due to poor parenting.
+      wild: false
+      flagged: false
+
+    - id: GR5
+      text: Hairy leggings.
+      wild: false
+      flagged: false
+
+    - id: GR6
+      text: Hilary Clinton.
+      wild: false
+      flagged: false
+
+    - id: GR7
+      text: Aids.
+      wild: false
+      flagged: false
+
+    - id: GR8
+      text: Your mother's vagina.
+      wild: false
+      flagged: false
+
+    - id: GR9
+      text: It started with Charlie Chaplan's anus.
+      wild: false
+      flagged: false
+
+    - id: GR10
+      text: A cross-training, cross-dressing Sexbot.
+      wild: false
+      flagged: false
+
+orange_cards:
+    type: words
+    alias: Words
+    color: orange
+    value: 5
+    cards:
+      - id: OR1
+        text: In your own words
+        wild: true
+        flagged: false
+        category:
+
+      - id: OR2
+        text: In your own words
+        wild: true
+        flagged: false
+        category:
+
+      - id: OR3
+        text: Lubricated
+        wild: false
+        flagged: false
+        category: adjective
+
+      - id: OR4
+        text: Jada Pinket's Stinket
+        wild: false
+        flagged: false
+        category: person
+
+      - id: OR5
+        text: Bill Clinton's fly
+        wild: false
+        flagged: false
+        category: person
+
+      - id: OR6
+        text: Shit
+        wild: false
+        flagged: false
+        category: noun
+
+      - id: OR7
+        text: Oozing
+        wild: false
+        flagged: false
+        category: adjective
+
+      - id: OR8
+        text: Running
+        wild: false
+        flagged: false
+        category: verb
+
+      - id: OR9
+        text: Sniffing
+        wild: false
+        flagged: false
+        category: verb
+
+      - id: OR10
+        text: Fug Factory
+        wild: false
+        flagged: false
+        category: place

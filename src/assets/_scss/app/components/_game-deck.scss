@@ -1,0 +1,94 @@
+/*
+    GAME-DECK.CSS
+
+    - Last updated: 16.10.16
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// GAME DECK
+//-----------------------------------------------------------------
+
+.sb-game-screen {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+//-----------------------------------------------------------------
+// GAME DECK
+//-----------------------------------------------------------------
+
+.sb-game-deck {
+	min-height: 130px;
+	background: black;
+	color: white;
+	padding: rem-calc(30 0);
+	font-size: rem-calc(17);
+	font-weight: 600;
+	z-index: 1;
+
+	> .container {
+		position: relative; // for hud items
+	}
+
+	.sb-game-deck-question {
+		padding-right: rem-calc(60);
+		margin-bottom: rem-calc(20);
+	}
+
+	.sb-game-deck-answer {
+		display: table;
+		width: 100%;
+		padding-right: rem-calc(60);
+
+		.text {
+			position: relative;
+			top: -2px; // pixel perfect
+			display: table-cell;
+			padding-right: 10px;
+			width: 10px; // null
+			// display: block;
+		}
+
+		.sb-game-deck-answer-slot-1 {
+			width: 100%;
+			margin-right: rem-calc(60);
+			border-bottom: 2px solid $brand-green;
+			color: $brand-green;
+		}
+	}
+
+	//=========================================
+	// HUD ITEMS
+	//=========================================
+
+	.sb-hud-items {
+		position: absolute;
+		top: 0;
+		right: rem-calc(15);
+		text-align: right;
+
+		.sb-hud-item {
+			font-family: Oswald;
+			font-size: rem-calc(11);
+			color: darken($brand-tertiary, 50%);
+			text-transform: uppercase;
+
+			.text {
+				display: block;
+				color: $brand-tertiary;
+			}
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//=========================================
+//
+//=========================================

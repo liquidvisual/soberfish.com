@@ -1,0 +1,209 @@
+/*
+    HERO.CSS
+
+    - updated: 18.03.16
+    - notes:
+        * liquidvisual recommends bxSlider for hero carousels
+        * fixed overflow problem when removing JS
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+$hero-height-sm:            auto; // IMPORTANT: if carousel slides, you need a fixed height
+$hero-height-md:            rem-calc(575);
+$hero-height-md-fixed:      rem-calc(575);
+$hero-height-lg:            rem-calc(690);
+$hero-carousel-bullet-size: rem-calc(16);
+
+//-----------------------------------------------------------------
+// Hero Wrapper
+//
+// Used to align the controls relative to the container
+//-----------------------------------------------------------------
+
+.lv-hero-wrapper {
+    position: relative;
+}
+
+//-----------------------------------------------------------------
+// Hero
+//
+// By design, mobile defaults to 'auto'
+//-----------------------------------------------------------------
+
+.lv-hero {
+    width: 100%; // added last minute - breaking?
+    overflow: hidden; // causes problems without JS
+    height: $hero-height-sm;
+
+    @include media-breakpoint-up(md) {
+        height: $hero-height-md;
+    }
+
+    @include media-breakpoint-up(lg) {
+       height: $hero-height-lg;
+    }
+
+    //=========================================
+    // Has Auto Height
+    //
+    // * Will override above at all sizes
+    // * Height determined by inner caption
+    //=========================================
+
+    &.has-auto-height {
+        height: auto;
+    }
+    //=========================================
+    // Has Fixed Height
+    //
+    // * Used on internal pages to set a height
+    //=========================================
+
+    &.has-fixed-height {
+        height: rem-calc(150); //$hero-height-sm;
+        background-position: center center;
+
+        @include media-breakpoint-up(md) { // added - refactor
+           height: rem-calc(300);
+        }
+
+        @include media-breakpoint-up(xl) {
+           height: $hero-height-md-fixed;
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// Hero Item (Slides)
+//-----------------------------------------------------------------
+
+.lv-hero-item {
+    float: left;
+    width: 100%; // need
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    //=========================================
+    // For Positioning Captions
+    //=========================================
+
+    .lv-hero-item-table {
+        display: table;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .lv-hero-item-cell {
+            display: table-cell;
+
+            @include media-breakpoint-up(md) {
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// Hero - Caption
+//-----------------------------------------------------------------
+
+.lv-hero-item-caption {
+    display: inline-block; /* more flexibility */
+    width: 100%; /* mobile */
+    margin: rem-calc(50 0);
+
+    @include media-breakpoint-up(md) {
+        width: auto;
+    }
+}
+
+//-----------------------------------------------------------------
+// Hero - Carousel Controls
+//-----------------------------------------------------------------
+
+.lv-hero-carousel-controls {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    height: 0;
+    z-index: 100;
+
+    .container {
+        position: relative;
+    }
+
+    //=========================================
+    // Buttons
+    //=========================================
+
+    .lv-hero-carousel-prev-btn,
+    .lv-hero-carousel-next-btn {
+        position: absolute;
+        width: rem-calc(50);
+        height: rem-calc(50);
+        line-height: rem-calc(50);
+        cursor: pointer;
+        text-align: center;
+        font-family: "FontAwesome";
+        font-size: rem-calc(50);
+        display: none;
+
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+        }
+    }
+
+    .lv-hero-carousel-prev-btn {
+        left: $container-gutter/2;
+    }
+
+    .lv-hero-carousel-next-btn {
+        right: $container-gutter/2;
+    }
+}
+
+//-----------------------------------------------------------------
+// Hero - Carousel Bullets
+//-----------------------------------------------------------------
+
+.lv-hero-carousel-bullets {
+    position: absolute;
+    bottom: rem-calc(30);
+    // left: 0;
+    // width: 100%;
+    z-index: 1000;
+}
+
+.bx-pager-item {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.bx-pager-item a {
+    display: inline-block;
+    width: $hero-carousel-bullet-size;
+    height: $hero-carousel-bullet-size;
+    background: rgba(black, 0.7);
+    border-radius: 100%;
+    border: 1px solid #BFBFBF;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.bx-pager-item a.active {
+    background: grey; //$secondary-color;
+    border: 1px solid #676767;
+}

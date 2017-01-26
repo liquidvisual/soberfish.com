@@ -1,0 +1,17 @@
+{% assign settings = site.data.settings %}
+
+<!-- FOOTER BOTTOM -->
+<section class="global-footer-bottom p-y-1">
+    <div class="container">
+
+		<small>&copy; {{ site.time | date: '%Y' }}</small>
+
+        <small>
+        	<a class="author-logo pull-xs-right" target="_blank" href="{{ settings.author.url }}">
+            	<span class="text">{{ settings.author.description }}</span>
+            	<img width="16" height="16" src="{{ settings.author.logo }}" alt="Created by {{ settings.author.title }}">
+        	</a>
+        </small>
+
+    </div>
+</section>

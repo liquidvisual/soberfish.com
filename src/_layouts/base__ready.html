@@ -1,0 +1,76 @@
+---
+layout: base
+---
+
+<div class="sb-game-screen">
+
+	<section class="sb-game-deck">
+		<div class="container">
+			<div class="sb-game-deck-question" data-sb-game-deck-question>
+				<!-- Using your most offensive card, sell the group on the latest British informercial product. -->
+			</div>
+
+			<!-- ANSWER -->
+			<div class="sb-game-deck-answer">
+				<div class="text">Answer:</div>
+				<div class="sb-game-deck-answer-slot-1" data-sb-game-deck-answer-slot-1>
+					<!-- It's definitely due to global warming, you scum. -->
+				</div>
+			</div>
+
+			<!-- HUD ITEMS -->
+			<div class="sb-hud-items">
+				<h5 class="sb-hud-item">Round <span class="text" data-round>1/10</span></h5>
+				<h5 class="sb-hud-item">Host <span class="text" data-stake>P1</span></h5>
+				<h5 class="sb-hud-item">Stake <span class="text" data-stake>$0</span></h5>
+			</div>
+		</div>
+	</section>
+
+	<!-- PLAYER DECK -->
+	<section class="sb-player-deck" data-player-deck>
+
+		{% comment %}
+		{% for card_type in site.data.cards_yaml %}
+			{% if card_type[1].type == "answer" %}
+				<ul class="sb-card-grid">
+					{% for card in card_type[1].cards %}
+					<li>
+						<!-- CARD -->
+						<div class="sb-card is-{{ card_type[1].color }} {% if card.wild %}is-wild{% endif %}" data-wild="{{ card.wild }}" data-value="{{ card_type[1].value }}">
+							<div class="sb-card-inner">
+								<header class="sb-card-header">
+									<span class="text">{{ card_type[1].alias }}</span>
+								</header>
+								<div class="sb-card-text">
+									<p>{{ card.text }}</p>
+								</div>
+								<div class="sb-card-value">
+									<span class="text">{{ card_type[1].value }}</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		{% endfor %}
+		{% endcomment %}
+	</section>
+
+	<!-- PLAYER INFO -->
+	<section class="sb-player-info">
+		<div class="container">
+			<div class="sb-player-name float-left">
+				<i class="fa fa-user"></i> <span class="text" data-player-name></span>
+			</div>
+			<div class="sb-player-cash float-left">
+				<i class="fa fa-money"></i> <span class="text" data-player-cash>$0</span>
+			</div>
+			<div class="sb-player-card-count float-right">
+				<span class="text" data-player-cards-amount>10 cards</span>
+			</div>
+		</div>
+	</section>
+
+</div>

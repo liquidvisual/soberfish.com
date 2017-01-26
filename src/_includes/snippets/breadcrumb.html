@@ -1,0 +1,26 @@
+{% comment %}
+<!--
+    Updated: 15.08.16
+    Basic output:
+
+        <nav class="breadcrumb">
+          <a class="breadcrumb-item" href="#">Home</a>
+          <a class="breadcrumb-item" href="#">Library</a>
+          <a class="breadcrumb-item" href="#">Data</a>
+          <span class="breadcrumb-item active">Bootstrap</span>
+        </nav>
+-->
+{% endcomment %}
+
+{% assign crumbs = page.url | split: '/' %}
+
+<nav class="lv-breadcrumb breadcrumb">
+    <a class="breadcrumb-item" href="/">Home</a>
+    {% for crumb in crumbs offset: 1 %}
+        {% if forloop.last %}
+            <span class="breadcrumb-item">{{ crumb | replace:'-',' ' }}</span>
+        {% else %}
+            <a class="breadcrumb-item" href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' }}</a>
+        {% endif %}
+    {% endfor %}
+</nav>

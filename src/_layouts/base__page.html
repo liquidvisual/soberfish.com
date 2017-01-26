@@ -1,0 +1,35 @@
+---
+layout: base
+---
+
+{% assign settings = site.data.settings %}
+{% assign featured = site.data.sitemap[3].children | where: "featured", true %}
+
+{% for card_type in site.data.cards_yaml %}
+
+	<div class="container">
+		<h2>{{ card_type[1].alias }}</h2>
+	</div>
+
+	<ul class="sb-card-grid">
+		{% for card in card_type[1].cards %}
+		<li>
+			<!-- CARD -->
+			<div class="sb-card is-{{ card_type[1].color }} {% if card.wild %}is-wild{% endif %}" data-wild="{{ card.wild }}" data-value="{{ card_type[1].value }}">
+				<div class="sb-card-inner">
+					<header class="sb-card-header">
+						<span class="text">{{ card_type[1].alias }}</span>
+					</header>
+					<div class="sb-card-text">
+						<p>{{ card.text }}</p>
+					</div>
+					<div class="sb-card-value">
+						<span class="text">{{ card_type[1].value }}</span>
+					</div>
+				</div>
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+
+{% endfor %}

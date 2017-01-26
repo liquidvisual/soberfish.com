@@ -1,0 +1,56 @@
+/*
+    PLAYER-DECK.CSS
+
+    - Last updated: 16.10.16
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// PLAYER DECK
+//-----------------------------------------------------------------
+
+.sb-player-deck {
+	// position: relative;
+	// top: 200px;
+}
+
+.sb-player-info {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: rem-calc(10 0);
+	background: #4b324b;
+	overflow: hidden;
+	color: white;
+
+	.sb-player-cash,
+	.sb-player-name {
+		margin-right: 15px
+	}
+
+	.fa {
+		font-size: rem-calc(18);
+		margin-right: 4px;
+	}
+
+	.fa-money {
+		color: #9ebd9d;
+		background: #667565;
+		line-height: 10px;
+	}
+
+	.fa-user {
+		color: lighten($brand-primary, 20%);
+	}
+
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//=========================================
+//
+//=========================================

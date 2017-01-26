@@ -1,0 +1,40 @@
+# GLOBAL SITE SETTINGS
+
+cname: ________.yourwebvisual.com
+
+# META
+title: New Website
+seo_title:
+company:
+description:
+
+# SITE DEFAULTS
+site_tagline:
+
+# DEVELOPER
+allow_robots: false
+github_repo_owner: liquidvisual
+github_repo_path: https://github.com/liquidvisual/________
+github_repo_name:
+jekyll_version: 3.0.3
+
+# OFFICES
+offices:
+  - title:
+    address:
+
+# SOCIAL MEDIA
+facebook:
+linked_in:
+google_plus:
+instagram:
+
+# GOOGLE
+google_analytics: "UA-XXXXXXXX-X"
+
+# AUTHOR
+author:
+  title: Mitch
+  url: http://liquidvisual.com
+  logo: /assets/img/ui/liquidvisual-logo.svg
+  description: Site by liquidvisual

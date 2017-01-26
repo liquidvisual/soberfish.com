@@ -1,0 +1,122 @@
+---
+layout: base
+title: Component Library
+permalink: /docs/component-library/
+sitemap: false
+---
+
+{% assign settings = site.data.settings %}
+{% assign components = site.docs | where: "type", "component" %}
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+
+<style>
+	html,
+	body,
+	.lv-page {
+		background: transparent;
+	}
+
+	.highlight {
+		background: #e3e6ec;
+	}
+
+	.highlight pre {
+		max-height: 250px;
+		overflow: auto;
+	}
+
+	.component-rendered {
+		background: white;
+		padding: 30px;
+		margin-bottom: 4rem;
+		box-shadow: 0px 6px 14px 2px rgba(0,0,0,0.1);
+		border-radius: 4px;
+		box-shadow: 0 2px 4px rgba(50, 50, 93, .1);
+	}
+
+	h1, h2 {
+		font-family: 'Montserrat';
+		color: #222;
+		text-transform: capitalize;
+	}
+
+	.global-header,
+	.global-navigation,
+	.global-footer,
+	.lv-off-canvas,
+	.lv-page-loader {
+		display: none;
+	}
+
+	.smello {
+		padding: 50px 30px;
+		max-width: 1060px;
+		margin: 0 auto;
+	}
+</style>
+
+<div class="smello">
+
+	<h1>Component Library</h1>
+	<hr>
+	<div class="spacer m-b-2"></div>
+
+	<!-- COMPONENTS -->
+	{% for item in components %}
+
+		<h2 id="guide-{{ item.title | slugify | downcase }}">{{ item.title | capitalize }}</h2>
+
+		<section>
+
+			<!-- DESC -->
+			<div class="component-desc m-y-2">
+				{% if item.usage %}
+					<p>{{ item.usage }}</p>
+				{% endif %}
+				{% if item.scss %}
+					<p class="m-b-0"><a target="_blank" href="{{ settings.github_repo | append: "/tree/master" }}{{ item.scss }}">{{ item.scss }}</a></p>
+				{% endif %}
+			</div>
+
+			<!-- RENDERED COMPONENT -->
+			<div class="component-rendered m-y-2">
+				{{ item.content }}
+			</div>
+
+			<div class="hidden-sm-down">
+				<!-- HTML -->
+				<p>The HTML:</p>
+				<div class="component-code">
+					{% highlight html %}{{ item.content }}{% endhighlight %}
+				</div>
+			</div>
+		</section>
+
+		<div class="spacer m-b-3"></div>
+	{% endfor %}
+
+	<!-- COMPONENT SELECTOR -->
+	<nav class="m-t-2 m-b-3">
+		<select class="c-select" name="Select Components" id="component-select">
+			<option value>Jump to component...</option>
+				{% for item in components %}
+					<option value="#guide-{{ item.title | slugify | downcase }}">{{ item.title | capitalize }}</option>
+					{% for entry in item.items %}
+					<option value="#guide-{{ entry.title | slugify | downcase }}">&nbsp;&nbsp;&nbsp;{{ entry.title }}</option>
+				{% endfor %}
+			{% endfor %}
+		</select>
+	</nav>
+
+	<!-- COMPONENT SELECTOR: JAVASCRIPT -->
+	<script>
+	  (function (document, undefined) {
+	  	document.getElementById('component-select').onchange = function() {
+	    	var val = this.value;
+	      	if (val !== "") window.location = val;
+	    }
+	  })(document);
+	</script>
+
+</div>

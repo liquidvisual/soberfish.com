@@ -1,0 +1,12 @@
+- title: Home
+  url: /
+
+- title: Case Studies
+  url: /case-studies/
+  include_children_in_nav: true
+  children:
+    - title: Item
+      url: /case-studies/case-studies-item/
+
+- title: 404
+  url: /404/

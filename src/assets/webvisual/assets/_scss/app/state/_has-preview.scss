@@ -1,0 +1,49 @@
+/*
+    HAS-PREVIEW.CSS
+
+    - Last updated: 01.09.16
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// IS MODE PREVIEW
+//-----------------------------------------------------------------
+
+.is-mode-preview .lv-main {
+    padding: 0;
+}
+
+.is-mode-preview:not(.has-closed-menu) .lv-stage {
+    background: #515764;
+}
+
+//=========================================
+// Laptop
+//=========================================
+
+.has-closed-menu .lv-devices {
+    display: none;
+}
+
+//=========================================
+// Show
+//=========================================
+
+.has-closed-menu .lv-iframe-loader-fullscreen {
+    display: block;
+    // display: none;
+}
+
+//=========================================
+// Close Button
+//=========================================
+
+.is-mode-preview .lv-menu-btn .text:after {
+    content: "Fullscreen";
+}
+
+.is-mode-preview.has-closed-menu .lv-menu-btn .text:after {
+    content: "See more";
+}

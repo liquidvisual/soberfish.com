@@ -1,0 +1,21 @@
+---
+game:
+  seed: 123456
+  questions: [BLA001, BLA003, BLA004, BLA005, BLA006, BLA007, BLA008, BLA009, BLA010]
+  cards_in_play: []
+  dealer: player-1
+  timer: false
+  timer_duration: 6000
+
+  players:
+    - name: player-1
+      cash: 105
+      cards_active: [OR001, OR001, GR002, RD001, BLU001]
+      cards_won: [GR043, BLA003]
+      cards_rejected: [W004]
+
+    - name: player-2
+      cash: 0
+      cards_active: [OR003, OR004, GR005, RD006, BLU007]
+      cards_won: []
+      cards_rejected: []

@@ -1,0 +1,65 @@
+/*
+    IS-LOADING.CSS
+
+    - Last updated: 28.07.16
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// DEFAULT
+//-----------------------------------------------------------------
+
+
+
+//-----------------------------------------------------------------
+// IS LOADING
+//-----------------------------------------------------------------
+
+.is-loading {
+    display: none;
+    // visibility: hidden;
+}
+
+.no-js .is-loading {
+	display: inherit;
+}
+
+.has-authenticated.has-loaded {
+	display: block;
+
+	.lv-stage:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $gray-light;
+		z-index: 10000000;
+		opacity: 1;
+		transition: opacity 200ms;
+	}
+}
+
+.has-authenticated.has-loaded {
+	.lv-stage:after {
+		@keyframes fadeInPreview {
+		    from {
+		        opacity: 1;
+		    } to {
+		        opacity: 0;
+		        visibility: hidden; // destroy it
+		    }
+		}
+		animation: fadeInPreview 0.4s ease 0s alternate 1 forwards;
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//=========================================
+//
+//=========================================

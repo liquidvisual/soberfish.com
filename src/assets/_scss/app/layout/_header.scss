@@ -1,0 +1,135 @@
+/*
+    HEADER.CSS
+
+    - Last updated: 06.10.16
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+
+$header-height-sm: 60px !default; // optimal
+$header-height-md: 130px !default;
+$header-height-lg: 220px !default;
+
+//-----------------------------------------------------------------
+// HEADROOM
+//-----------------------------------------------------------------
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    @include media-breakpoint-down(sm) {
+        transform: translateY(0%);
+    }
+}
+.headroom--unpinned {
+	@include media-breakpoint-down(sm) {
+    	transform: translateY(-100%);
+	}
+}
+
+//-----------------------------------------------------------------
+// HEADER
+//-----------------------------------------------------------------
+
+.global-header {
+	position: absolute; // covers more use cases
+	top: 0;
+	width: 100%;
+	z-index: 999;
+
+	@include media-breakpoint-down(sm) {
+	    background: white;
+	    box-shadow: 0 0 3px 1px rgba(black, 0.2);
+	}
+
+	> .container {
+		position: relative;
+	}
+}
+
+//=========================================
+// HEADER HEIGHT [LOCKED]
+//=========================================
+
+.global-header,
+.global-header .display-table {
+	height: $header-height-sm;
+
+	@include media-breakpoint-up(md) {
+	    height: $header-height-md;
+	}
+
+	@include media-breakpoint-up(xl) {
+		height: $header-height-lg;
+	}
+}
+
+//=========================================
+// FIXED MOBILE [LOCKED]
+//=========================================
+
+.global-header {
+	@include media-breakpoint-down(sm) {
+	    position: fixed;
+	}
+}
+
+//-----------------------------------------------------------------
+// LOGO
+//-----------------------------------------------------------------
+
+.global-header .logo {
+	position: relative;
+	top: 0;
+	display: inline-block;
+
+	@include media-breakpoint-up(md) {
+	    top: 0;
+	}
+
+	@include media-breakpoint-up(lg) {
+	    top: 0;
+	}
+
+	@include media-breakpoint-up(xl) {
+	    top: 0;
+	}
+
+	img {
+		width: 75px;
+
+		@include media-breakpoint-up(md) {
+			width: 200px;
+		    padding: rem-calc(15 0);
+		}
+
+		@include media-breakpoint-up(xl) {
+		    padding: none;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// HAMBURGER
+//-----------------------------------------------------------------
+
+.global-mobile-menu {
+	position: absolute;
+	top: 18px;//$container-gutter;
+	right: $container-gutter/2;
+	overflow: hidden;
+
+	@include media-breakpoint-up(md) {
+	    top: 30px;
+	    right: $container-gutter;
+	}
+}
+
+//=========================================
+//
+//=========================================

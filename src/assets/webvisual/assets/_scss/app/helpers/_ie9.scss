@@ -1,0 +1,104 @@
+/*
+    IE9.CSS
+
+    - Last updated: 22.07.16
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 01. ANIMATE OVERLAY (IE9)
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.no-cssanimations .has-authenticated .lv-login-overlay {
+    transform: translate($app-menu-toolbar-width, 90%);
+    opacity: 0;
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 02. ANIMATE TOOLBAR (IE9)
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.no-cssanimations .has-authenticated .lv-context-menu-toolbar {
+    transform: translate(0, 0);
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 03. PAGE STRIP (SUBTLE EFFECT) (IE9)
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.no-cssanimations .has-authenticated .lv-context-menu-top-strip {
+    visibility: visible;
+    transform: translate(0, 0);
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 04. CONTEXT MENU (IE9)
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.no-cssanimations .has-authenticated .lv-context-menu-header,
+.no-cssanimations .has-authenticated .lv-context-menu-body {
+    visibility: visible;
+    opacity: 1;
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 05. STAGE ANIMATION ********************* (IE9)
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.no-cssanimations .has-authenticated .lv-stage {
+    visibility: visible;
+    transform: translate($app-menu-width-medium, $lv-stage-top-offset);
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 06. TOPBAR ANIMATION (IE9)
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.no-cssanimations .has-authenticated .lv-topbar {
+    visibility: visible;
+    transform: translate($app-menu-width-medium, $lv-stage-top-offset);
+}
+
+//-----------------------------------------------------------------
+// (IE9+)
+//-----------------------------------------------------------------
+
+@media screen and (min-width:0\0) and (min-resolution: +72dpi) {
+    .lv-dynamic-menu .dropdown {
+        transform: translateX($app-menu-width-medium + $app-menu-toolbar-width);
+        opacity: 0.99; // hack works!
+
+        .dropdown {
+            top: $lv-topbar-height-medium + $lv-stage-top-offset;
+            left: $app-menu-toolbar-width;
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// (IE9)
+//-----------------------------------------------------------------
+
+// @media screen and (min-width:0\0) and (min-resolution: .001dpcm) {
+//     .lv-page .lv-dynamic-menu .dropdown {
+//         transform: translateX($app-menu-width-medium + $app-menu-toolbar-width);
+//         opacity: 0.99; // hack works!
+
+//         .dropdown {
+//             top: $lv-topbar-height-medium + $lv-stage-top-offset;
+//             left: $app-menu-toolbar-width;
+//         }
+//     }
+// }
+
+// ie10-11
+// @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+// $menu-width-xs: $app-menu-width-small; //260px;
+// $menu-width-md: $app-menu-width-medium; //350px;
+
+// $app-menu-width-small: 280px;
+// $app-menu-width-medium: 330px; ////320px; //370px;
+// $app-menu-toolbar-width: 60px; //50px;

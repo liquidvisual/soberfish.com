@@ -1,0 +1,105 @@
+/*
+    MENU-SCREEN.CSS
+
+    - Last updated: 16.10.16
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// MENU SCREEN
+//-----------------------------------------------------------------
+
+.sb-menu-screen {
+	color: white;
+
+	> .container > .row {
+		height: 90vh;
+	}
+
+	.sb-passcode {
+		color: $brand-tertiary;
+		font-size: rem-calc(60);
+		font-family: Courier, 'Courier New';
+
+		&.is-small {
+			font-size: rem-calc(40);
+			// height: 52px;
+			padding-bottom: 10px;
+			transition: padding ease 300ms;
+		}
+	}
+
+	//-----------------------------------------------------------------
+	// NUMBER PAD
+	//-----------------------------------------------------------------
+
+	.sb-number-pad {
+		width: 270px;
+		margin: 0 auto;
+
+		.btn {
+			cursor: pointer;
+			border-radius: 100%;
+			width: rem-calc(70);
+			height: rem-calc(70);
+			line-height: rem-calc(70);
+			border: 0;
+			font-size: rem-calc(29);
+			font-weight: 300;
+			text-align: center;
+			color: white;
+			padding: 0;
+
+			&:active {
+				background: lighten($brand-primary, 30%);
+				transition: none;
+				color: darken($brand-primary, 20%);
+			}
+
+			&.disabled {
+				visibility: hidden;
+			}
+		}
+		.btn-text {
+			// background: none;
+			border: 0;
+			font-size: rem-calc(20);
+			color: white;
+			cursor: pointer;
+		}
+	}
+
+
+
+	h1 {
+		font-size: rem-calc(60);
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+
+.sb-menu-screen-bg {
+	position: fixed;
+	top: -20px;
+	left: -40px;
+	width: 100%;
+	transform: rotate(-20deg);
+	transform-origin: top;
+	z-index: -1;
+
+	.sb-menu-screen-bg-item {
+		padding: rem-calc(2);
+		color: lighten($brand-primary, 2%);
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//=========================================
+//
+//=========================================

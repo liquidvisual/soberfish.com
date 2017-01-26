@@ -1,0 +1,280 @@
+/*
+    TOPBAR.CSS
+
+    - Last updated: 06.10.16
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+
+$container-gutter              : 30px !default;
+$primary-color                 : $brand-primary;
+$secondary-color               : #eee !default;
+$top-parent-anchor-bg-color    : $primary-color;
+$global-radius                 : 0;
+$lv-nav-padding                : 15px;
+$lv-nav-height                 : 44px;
+$topbar-align                  : "right"; // Fluid, Right, Left
+$dropdowns-have-anchor-borders : true;
+
+//-----------------------------------------------------------------
+// NAVIGATION
+//
+// If nav BG color is desired. Make nav absolute, and topbar relative
+//-----------------------------------------------------------------
+
+.global-navigation {
+    position: relative; // [LOCKED]
+    z-index: 9999;
+
+    > .container {
+        position: relative;
+    }
+}
+
+//-----------------------------------------------------------------
+// TOPBAR
+//-----------------------------------------------------------------
+
+.topbar {
+    position: absolute; // [LOCKED]
+    top: 10px;
+    right: $container-gutter / 2;
+    // width: 100%; // [LOCKED]
+}
+
+//-----------------------------------------------------------------
+// GENERAL UL
+//-----------------------------------------------------------------
+
+.topbar ul {
+    padding: 0; // reset
+    margin: 0; // reset
+    list-style: none; // reset
+    font-family: $font-family-sans-serif;
+    font-size: rem-calc(14);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+//=========================================
+// TOP PARENT UL
+//=========================================
+
+.topbar > ul {
+    display: table;
+
+    > li {
+        position: relative; // [LOCKED]
+        float: left; // prevents hairline weirdness
+        margin: 0; // reset
+    }
+}
+
+@if $topbar-align == "fluid" {
+    .topbar > ul {
+        width: 100%; // option A
+
+        > li {
+            display: table-cell; // option A
+            float: none;
+            text-align: center;
+        }
+    }
+}
+
+@if $topbar-align == "right" {
+    .topbar > ul {
+        float: right;
+    }
+}
+
+//-----------------------------------------------------------------
+// ALL ANCHORS (INCL. DROPDOWN CHILDREN)
+//-----------------------------------------------------------------
+
+.topbar a {
+
+    display: block; // locked
+    padding: rem-calc(10 15);
+    // color: white;
+}
+
+//-----------------------------------------------------------------
+// TOP PARENT ANCHORS (VISIBLE)
+//-----------------------------------------------------------------
+
+.topbar .top-parent-anchor {
+    display: block; // locked
+    padding: rem-calc(0 $lv-nav-padding);
+    line-height: rem-calc($lv-nav-height);
+    // background: $top-parent-anchor-bg-color;
+    color: white; //$gray-light;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(black, 0.3); //lighten($top-parent-anchor-bg-color, 10%);
+        color: white;
+    }
+
+    // Optional
+    &:hover > .text {
+        border-bottom: none !important;
+    }
+}
+
+//=========================================
+// ACTIVE TOP PARENT ANCHOR
+//=========================================
+
+.topbar .active .top-parent-anchor .text {
+    // background: $primary-color; // optional
+    color: white;
+    border-bottom: 2px solid $brand-primary;
+    padding-bottom: 3px;
+}
+
+//-----------------------------------------------------------------
+// DROPDOWN ANCHORS
+//-----------------------------------------------------------------
+
+.topbar .has-dropdown:hover > .top-parent-anchor {
+    background: rgba(black, 0.3); //$top-parent-anchor-bg-color;
+    color: white;
+}
+
+.topbar .active.has-dropdown:hover > .top-parent-anchor .text {
+    border-bottom: 0;
+}
+
+// UX decision, dropdowns are fiddly on tablets
+.topbar .has-dropdown:hover > .dropdown {
+    @include media-breakpoint-up(xl) {
+        opacity: 1;
+        height: auto;
+        overflow: visible;
+        visibility: visible;
+    }
+}
+
+//=========================================
+// ACTIVE STATE (OPTIONAL)
+//=========================================
+
+// .topbar .has-dropdown.active:hover > .top-parent-anchor {
+//     background: $top-parent-anchor-bg-color;
+// }
+
+//=========================================
+// THIRD LEVEL
+//=========================================
+
+.topbar .dropdown .has-dropdown:hover > .dropdown {
+    @include media-breakpoint-up(md) {
+        opacity: 1;
+        height: auto;
+        visibility: visible;
+    }
+}
+
+//-----------------------------------------------------------------
+// DROPDOWNS
+//-----------------------------------------------------------------
+
+.topbar .dropdown {
+    @include transition('opacity');
+    display: none; // OPT IN DESIGN
+    position: absolute;
+    opacity: 0;
+    height: 0; // so hit areas aren't triggered
+    overflow: hidden; // so hit areas aren't triggered
+    // padding: rem-calc(10); // optional
+    top: auto;
+    left: 0;
+    width: rem-calc(240);
+    // background: lighten($brand-primary, 12%);
+    background: white;
+    border-radius: 0 0 $global-radius $global-radius;
+    // border-top: 4px solid $primary-color;
+    // box-shadow: 0 1px 1px 0px rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    visibility: hidden;
+}
+
+// Prevent far-right dropdown from exceeding page width
+.topbar .has-dropdown-right-aligned .dropdown {
+    right: 0;
+    left: auto;
+}
+
+.topbar .dropdown.is-nav-included {
+    display: block;
+}
+
+//=========================================
+// THIRD LEVEL
+//=========================================
+
+.topbar .dropdown .dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+// Prevent far-right 'nested' dropdown from exceeding page width
+.topbar .has-dropdown-right-aligned .dropdown .dropdown {
+    left: -100%;
+}
+
+//=========================================
+// DROPDOWN LIST + ANCHORS
+//=========================================
+
+.topbar .dropdown li {
+    position: relative;
+    float: none;
+    margin: 0; // reset
+
+    a {
+        transition: none; // UX decision
+        font-size: rem-calc(13); // opinionated
+        // color: white;
+        color: #444;
+        padding: rem-calc(15 15);
+    }
+}
+
+//=========================================
+// DROPDOWN ANCHOR BORDERS
+//=========================================
+
+@if $dropdowns-have-anchor-borders {
+    .topbar .dropdown a {
+        border-bottom: 1px solid #E8E8E8; //darken($primary-color, 2%); // optional
+        // border-top: 1px solid lighten($primary-color, 0%); // optional
+    }
+
+    .topbar .dropdown {
+        // border-bottom: 1px solid darken($primary-color, 5%); // optional
+    }
+
+    .topbar .dropdown li:last-child a {
+        border-bottom: 0;
+    }
+}
+
+//=========================================
+// DROPDOWN ANCHOR HOVERS
+//=========================================
+
+.topbar .dropdown a:hover {
+    background: #eee;
+    // background: lighten($primary-color, 2%); //#eee;
+    // color: white;
+    background: rgba(black, 0.3);
+}
+
+//=========================================
+//
+//=========================================

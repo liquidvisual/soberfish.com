@@ -1,0 +1,143 @@
+/*
+    CARD.CSS
+
+    - Last updated: 16.01.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// CARD
+//-----------------------------------------------------------------
+
+.sb-card-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+
+    li {
+        display: inline-block;
+        margin: rem-calc(20 10);
+    }
+}
+
+//-----------------------------------------------------------------
+// COMMON CARD
+//-----------------------------------------------------------------
+
+.sb-card {
+    white-space: normal;
+    font-size: rem-calc(11);
+    width: em-calc(250);
+    padding: em-calc(20);
+    border-radius: em-calc(15);
+    background: white;
+    box-shadow: 2px 2px 5px 2px rgba(black, 0.3);
+
+    @include media-breakpoint-up(sm) {
+        font-size: rem-calc(18);
+    }
+
+    &.active {
+        transform: scale(0.95);
+        background: lighten(rgba($brand-tertiary, 0.9), 8%);
+    }
+
+    .sb-card-inner {
+        position: relative;
+        display: table;
+        width: 100%;
+        border: 2px solid #ff9933;
+        height: em-calc(350);
+
+        .sb-card-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: em-calc(5);
+            color: white;
+            font-size: em-calc(25);
+            font-family: 'Francois One';
+            text-align: center;
+            text-transform: uppercase;
+            background: #ff9933;
+
+            .text {
+                display: block;
+                transform: rotate(-5deg);
+            }
+        }
+
+        .sb-card-text {
+            display: table-cell;
+            width: 100%;
+            vertical-align: middle;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Handwritten Crystal v2';
+            font-size: em-calc(20);
+            padding: em-calc(40 15);
+        }
+
+        .sb-card-value {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            color: $brand-orange;
+            font-weight: bold;
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// COLORS
+//-----------------------------------------------------------------
+
+.sb-card.is-orange {
+    .sb-card-inner { border: 2px solid $brand-orange; }
+    .sb-card-header { background: $brand-orange; }
+    .sb-card-value { color: $brand-orange; }
+    &.is-wild .sb-card-inner { border-style: dashed; }
+}
+
+.sb-card.is-green {
+    .sb-card-inner { border: 2px solid $brand-green; }
+    .sb-card-header { background: $brand-green; }
+    .sb-card-value { color: $brand-green; }
+    &.is-wild .sb-card-inner { border-style: dashed; }
+}
+
+.sb-card.is-red {
+    .sb-card-inner { border: 2px solid $brand-red; }
+    .sb-card-header { background: $brand-red; }
+    .sb-card-value { color: $brand-red; }
+
+    &.is-wild .sb-card-inner { border-style: dashed; }
+}
+
+.sb-card.is-blue {
+    .sb-card-inner { border: 2px solid $brand-blue; }
+    .sb-card-header { background: $brand-blue; }
+    .sb-card-value { color: $brand-blue; }
+    &.is-wild .sb-card-inner { border-style: dashed; }
+}
+
+//=========================================
+//
+//=========================================
+
+.sb-card.is-black {
+    background: black;
+
+    p {
+        color: white;
+    }
+    .sb-card-inner { border: none; }
+    .sb-card-header { display: none; }
+}

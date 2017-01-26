@@ -1,0 +1,86 @@
+{% comment %}
+<!--
+	Updated: 12.08.16
+	Note: data is pulled from src/data/sitemap.yml
+    OUTPUT:
+
+        <ul>
+            <li class="active"><a class="top-parent-anchor" href="/">HOME</a></li>
+            <li><a class="top-parent-anchor" href="/path/"><span class="text">PARENT LINK</span></a></li>
+            <li class="has-dropdown">
+                <a class="top-parent-anchor" href="/path/"><span class="text">PARENT LINK WITH CHILDREN</span></a>
+                <ul class="dropdown">
+                    <li><a href="/path/path/"><span class="text">CHILD LINK</span></a></li>
+                </ul>
+            </li>
+        </ul>
+-->
+{% endcomment %}
+
+{% assign sitemap = site.data.sitemap %}
+
+<ul>
+    {% for item in sitemap %}
+
+        {% capture parent_classes %}
+            {% if forloop.first and page.url == "/" %} active {% endif %}
+            {% if forloop.index > 1 and page.url contains item.url %} active {% endif %}
+            {% if item.children %} has-dropdown {% endif %}
+            {% if item.children and forloop.index >= 4 %} has-dropdown-right-aligned {% endif %}
+        {% endcapture %}
+
+        <li class="{{ parent_classes }}">
+
+            {% comment %}
+            <!-----------------------------------------------------------------
+            A. SET <SPAN> IF THE TOP-PARENT URL IS A HASH
+            B. SET <A> IF THE TOP-PARENT URL IS A PATH
+
+            REASON: DROPDOWN WILL REVEAL IF ANCHOR CLICKED (SCENARIO A)
+            DROPDOWN WILL REVEAL IF ARROW CLICKED (SCENARIO B)
+            ------------------------------------------------------------------>
+            {% endcomment %}
+
+            {% if item.url contains "#" %}
+                <span class="top-parent-anchor">
+                    <span class="text">{{ item.title }}</span>
+                </span>
+            {% else %}
+                <a class="top-parent-anchor" href="{{ item.url }}">
+                    <span class="text">{{ item.title }}</span>
+                </a>
+            {% endif %}
+
+            {% comment %}
+            <!-----------------------------------------------------------------
+            SECOND LEVEL
+            ------------------------------------------------------------------>
+            {% endcomment %}
+
+            {% if item.children %}
+                <ul class="dropdown {% if item.include_children_in_nav %} is-nav-included {% endif %}" data-parent="{{ item.title }}">
+
+                    {% for item in item.children %}
+                        <li class="{% if item.children %} has-dropdown {% endif %}">
+                            <a href="{{ item.url }}"><span class="text">{{ item.title }}</span></a>
+
+                            {% comment %}
+                            <!-----------------------------------------------------------------
+                            THIRD LEVEL
+                            ------------------------------------------------------------------>
+                            {% endcomment %}
+
+                            {% if item.children %}
+                                <ul class="dropdown" data-parent="{{ item.title }}">
+                                    {% for item in item.children %}
+                                        <li><a href="{{ item.url }}"><span class="text">{{ item.title }}</span></a></li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

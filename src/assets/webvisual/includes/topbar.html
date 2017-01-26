@@ -1,0 +1,49 @@
+---
+---
+
+<header class="lv-topbar">
+
+    <!-- LOGO -->
+    <a class="lv-topbar-logo" href="/manage/">
+        <img src="{{ '/assets/favicon.ico' | prepend: site.assets }}" alt="Logo">
+
+        <span class="lv-topbar-logo-text">
+            <span class="lv-topbar-logo-text-truncate">{{ site.data.settings.title }}</span><br>
+            <small class="lv-topbar-logo-timestamp">Updated <b>{{ site.time | date: "%-d %B %Y" }}</b></small>
+        </span>
+    </a>
+
+    <!-- TOOLS -->
+    <nav class="lv-topbar-tools">
+        <ul>
+            <li>
+                <button data-menu-btn class="lv-tool-button lv-menu-btn">
+                    <span class="hidden-xs-down text"></span>
+                    <span class="hidden-sm-up"><i class="fa fa-bars"></i></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- BUTTONS -->
+    <div class="lv-topbar-btns">
+        <button data-close-btn class="lv-topbar-close-btn" title="Remove Frame"><i class="fa fa-close"></i></button>
+        <button data-notes-btn class="lv-topbar-note-btn hidden-sm-down" title="Show Notes">
+            <i class="fa fa-bell-o"></i>
+            <!-- JS will set this red notification -->
+            <span class="lv-topbar-note-number" data-note-count hidden></span>
+        </button>
+
+        <!-- NOTES -->
+        <div class="lv-notes-panel hidden-sm-down">
+            <h3 class="lv-notes-panel-header">Notes</h3>
+            <div class="lv-notes-panel-body">
+
+                <!-- JS will replace this -->
+                <div data-page-notes></div>
+
+            </div>
+        </div>
+    </div>
+
+</header>

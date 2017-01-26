@@ -1,0 +1,49 @@
+/*
+    FORMS.CSS
+
+    - Last updated: 06.10.16
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// FORMS
+//-----------------------------------------------------------------
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="password"],
+textarea {
+	-webkit-appearance: none; // removes shadow on iOS
+}
+
+//-----------------------------------------------------------------
+// BOOTSTRAP VALIDATION
+// http://1000hz.github.io/bootstrap-validator/#validator-events
+//-----------------------------------------------------------------
+
+form[data-toggle="validator"] .error {
+	display: none;
+	width: 100%;
+	padding: rem-calc(5 10);
+	background: $brand-danger;
+	color: white;
+}
+
+form[data-toggle="validator"] .has-error > .form-control {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+form[data-toggle="validator"] .has-error > .error {
+	display: block;
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//=========================================
+//
+//=========================================
