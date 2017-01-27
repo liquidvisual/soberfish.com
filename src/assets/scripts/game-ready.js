@@ -7,6 +7,7 @@
 
 var PLAYER_ID = localStorage.getItem("playerID");
 var CARDS_LIBRARY = {};
+var cardsRendered = false;
 
 //-----------------------------------------------------------------
 // RUN ONCE
@@ -27,6 +28,7 @@ function getCardsLibrary(){
     .done(
         function(data) {
             CARDS_LIBRARY = data; // store the library first
+            // console.log(PLAYER_ID);
             initGame();
         })
     .fail(
@@ -71,7 +73,7 @@ function initGame() {
                     renderPlayerCardsAmount(obj);
                     renderPlayerCards(obj);
                     renderPlayerCash(obj);
-
+                    renderAnswer(obj);
 
                     // console.log(obj);
 
@@ -79,7 +81,7 @@ function initGame() {
                     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
                     // call the function again, this time with the timestamp we just got from server.php
-                    // getContent(data.timestamp);  // UNCOMMENT *****
+                    getContent(data.timestamp);  // UNCOMMENT *****
                 },
                 error: function (request, status, error) {
                     // alert(request.responseText);
@@ -101,6 +103,21 @@ function renderQuestion(obj) {
     var questionArr = obj['room']['questions'];
     var question = getCardFromId(questionArr[0]); // get first card id in array
     $('[data-sb-game-deck-question]').text(question.text);
+}
+
+function renderAnswer(obj) {
+    var cardsInPlayArr = obj['room']['cards_in_play'];
+
+    if (cardsInPlayArr.length == 0) {
+
+    } else {
+        var len = cardsInPlayArr.length-1;
+        var cardID = cardsInPlayArr[len];
+        var card = getCardFromId(cardID);
+
+        $('[data-sb-game-deck-answer-slot-1]').text(card.text);
+    }
+
 }
 
 //-----------------------------------------------------------------
@@ -126,9 +143,10 @@ function renderPlayerCards(obj) {
         var cardValue = card.properties.value;
         var isWild = card.wild ? 'is-wild' : ''; // individual card, not group
         var cardText = card.text;
+        var cardID = card.id;
 
         html += '<li>';
-        html +=     '<div class="sb-card '+isColor+' '+isWild+'" data-wild="true" data-value="10">';
+        html +=     '<div class="sb-card '+isColor+' '+isWild+'" data-wild="true" data-value="10" data-id="'+cardID+'">';
         html +=         '<div class="sb-card-inner">'
         html +=             '<header class="sb-card-header">'
         html +=                 '<span class="text">'+cardTypeAlias+
@@ -147,7 +165,28 @@ function renderPlayerCards(obj) {
 
     var $html = '<ul class="sb-card-grid">'+html+'</ul>';
 
-    $('[data-player-deck]').append($html);
+    if (!cardsRendered) {
+        $('[data-player-deck]').append($html);
+    }
+
+    cardsRendered = true;
+
+    //-----------------------------------------------------------------
+    // CLICK PROTOTYPE SEND ANSWER TO GAME DECK
+    //-----------------------------------------------------------------
+
+    $('.sb-card.is-green').click(function(){
+        var text = $('.sb-card-text p', $(this)).text();
+        var cardID = $(this).attr('data-id');
+        $(this).addClass('is-discarded');
+        // alert(cardID);
+        var jqxhr = $.get('http://www.liquidvisual.net/soberfish.com/php/cards_set_by_id.php', {'playerID': PLAYER_ID, 'cardID': cardID })
+        .done(
+            function(data) {
+                console.log('card has been set: ');
+                console.log(data);
+            })
+    })
 }
 
 //-----------------------------------------------------------------

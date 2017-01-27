@@ -38,6 +38,7 @@
     border-radius: em-calc(15);
     background: white;
     box-shadow: 2px 2px 5px 2px rgba(black, 0.3);
+    transition: transform 300ms ease;
 
     @include media-breakpoint-up(sm) {
         font-size: rem-calc(18);
@@ -78,11 +79,12 @@
             display: table-cell;
             width: 100%;
             vertical-align: middle;
-            font-weight: bold;
+            font-weight: 600;
             text-align: center;
-            font-family: 'Handwritten Crystal v2';
-            font-size: em-calc(20);
+            font-family: 'Patrick Hand';
+            font-size: em-calc(24);
             padding: em-calc(40 15);
+            line-height: 1.2;
         }
 
         .sb-card-value {
@@ -92,6 +94,16 @@
             color: $brand-orange;
             font-weight: bold;
         }
+    }
+}
+
+//-----------------------------------------------------------------
+// STATE
+//-----------------------------------------------------------------
+
+.sb-card {
+    &:active {
+        transform: scale(0.9);
     }
 }
 

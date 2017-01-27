@@ -75,7 +75,7 @@
                     var playerID = data;
                     var roomID = getRoomID(playerID);
                     localStorage.setItem("playerID", playerID); // Store it
-                    // window.location.assign("/ready/");
+                    window.location.assign("/ready/");
                     console.log(data);
                 }
 
