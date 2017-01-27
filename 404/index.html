@@ -597,6 +597,11 @@
 
     <!-- **** JAVASCRIPT **** -->
     <script src="/assets/scripts/minified.js"></script>
+    <script>
+    $(window).on('load', function() {
+        $('html').addClass('has-loaded');
+    });
+    </script>
 
     <!-- NO JAVASCRIPT WARNING -->
     <noscript>
