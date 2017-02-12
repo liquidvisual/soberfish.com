@@ -11,12 +11,12 @@ $(function() {
     // WINDOW LOAD
     //-----------------------------------------------------------------
 
-    $(window).on('load', function() {
-        $('html').addClass('has-loaded');
-        $('input, textarea').placeholder(); // IE9 Patch
+    // $(window).on('load', function() {
+    //     $('html').addClass('has-loaded');
+    //     $('input, textarea').placeholder(); // IE9 Patch
 
-        console.log('window loaded');
-    });
+    //     console.log('window loaded');
+    // });
 
     //-----------------------------------------------------------------
     // LAUNCH MANAGE ON KEYPRESS
