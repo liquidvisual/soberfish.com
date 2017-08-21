@@ -21,6 +21,8 @@
     z-index: 2147483647;
     pointer-events: none;
     transition: opacity ease 0.3s, visibility ease 0.3s;
+
+    display: none;
 }
 
 // INIT (IMPLICIT)

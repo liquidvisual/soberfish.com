@@ -69,7 +69,7 @@ function initGame() {
 
                     // Render player HUD
 
-                    renderRoomID();
+                    renderRoomID(obj);
                     renderPlayerName(obj);
                     renderPlayerCardsAmount(obj);
                     renderPlayerCards(obj);
@@ -203,10 +203,13 @@ function renderPlayerName(obj) {
 // RENDER ROOM ID
 //-----------------------------------------------------------------
 
-function renderRoomID() {
-    var roomID = localStorage.getItem("roomID");
-    var roomID = roomID.slice(0, 3) + " " + roomID.slice(3)
-    $('[data-room-id]').append('<i class="fa fa-hand-o-right"></i> ' +roomID);
+function renderRoomID(obj) {
+    var player = getPlayer(obj);
+    var roomID = getRoomID(player.id);
+
+    var roomID = roomID.slice(0, 3) + " " + roomID.slice(3);
+
+    $('[data-room-id]').text(roomID);
 }
 
 //==================================================
