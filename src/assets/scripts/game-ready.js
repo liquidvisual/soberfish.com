@@ -143,7 +143,7 @@ function renderPlayerCards(obj) {
         var cardTypeAlias = card.properties.alias;
         var cardValue = card.properties.value;
         var isWild = card.wild ? 'is-wild' : ''; // individual card, not group
-        var cardText = card.text;
+        var cardBody = card.text;
         var cardID = card.id;
 
         html += '<li>';
@@ -152,10 +152,10 @@ function renderPlayerCards(obj) {
         html +=             '<header class="sb-card-header">';
         html +=                 '<span class="text">'+cardTypeAlias+'</span>';
         html +=             '</header>';
-        html +=             '<div class="sb-card-text">';
-        html +=                 '<p>'+cardText+'</p>';
+        html +=             '<div class="sb-card-body">';
+        html +=                 '<p>'+cardBody+'</p>';
         html +=             '</div>';
-        html +=             '<div class="sb-card-value">';
+        html +=             '<div class="sb-card-footer">';
         html +=                 '<span class="text">'+cardValue+'</span>';
         html +=             '</div>';
         html +=         '</div>';

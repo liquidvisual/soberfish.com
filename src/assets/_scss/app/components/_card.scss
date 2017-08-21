@@ -28,12 +28,13 @@
 .sb-card {
     font-size: rem-calc(11);
     width: em-calc(250);
-    padding: em-calc(20);
+    padding: em-calc(16);
     margin: rem-calc(20 10);
-    border-radius: em-calc(15);
+    border-radius: em-calc(16);
     background: white;
     box-shadow: 0px 2px 5px 3px rgba(black, 0.2);
     transition: transform 300ms ease;
+    will-change: auto;
 
     @include media-breakpoint-up(sm) {
         font-size: rem-calc(18);
@@ -44,23 +45,18 @@
     //=========================================
 
     .sb-card-inner {
-        position: relative;
-        display: table;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
         border: 2px solid #ff9933;
+        border-radius: em-calc(8);
         height: em-calc(350);
-
-        // background: red;
+        overflow: hidden;
 
         //=========================================
         // HEADER
         //=========================================
 
         .sb-card-header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
             padding: em-calc(5);
             color: white;
             font-size: em-calc(25);
@@ -70,36 +66,35 @@
             background: #ff9933;
 
             .text {
-                display: block;
+                display: inline-block;
                 transform: rotate(-5deg);
             }
         }
 
         //=========================================
-        // TEXT
+        // BODY
         //=========================================
 
-        .sb-card-text {
-            display: table-cell;
-            width: 100%;
-            vertical-align: middle;
-            font-weight: 600;
+        .sb-card-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            height: 100%;
             font-family: 'Patrick Hand';
             font-size: em-calc(24);
             font-weight: 400;
-            padding: em-calc(40 15);
+            padding: em-calc(40 16 50 16);
             line-height: 1.2;
         }
 
         //=========================================
-        // VALUE
+        // FOOTER
         //=========================================
 
-        .sb-card-value {
-            position: absolute;
-            bottom: 5px;
-            left: 5px;
+        .sb-card-footer {
+            margin: em-calc(10 10 5 10);
+            margin-top: auto;
             color: $brand-orange;
             font-weight: bold;
         }
@@ -123,21 +118,21 @@
 .sb-card.is-orange {
     .sb-card-inner { border: 2px solid $brand-orange; }
     .sb-card-header { background: $brand-orange; }
-    .sb-card-value { color: $brand-orange; }
+    .sb-card-footer { color: $brand-orange; }
     &.is-wild .sb-card-inner { border-style: dashed; }
 }
 
 .sb-card.is-green {
     .sb-card-inner { border: 2px solid $brand-green; }
     .sb-card-header { background: $brand-green; }
-    .sb-card-value { color: $brand-green; }
+    .sb-card-footer { color: $brand-green; }
     &.is-wild .sb-card-inner { border-style: dashed; }
 }
 
 .sb-card.is-red {
     .sb-card-inner { border: 2px solid $brand-red; }
     .sb-card-header { background: $brand-red; }
-    .sb-card-value { color: $brand-red; }
+    .sb-card-footer { color: $brand-red; }
 
     &.is-wild .sb-card-inner { border-style: dashed; }
 }
@@ -145,7 +140,7 @@
 .sb-card.is-blue {
     .sb-card-inner { border: 2px solid $brand-blue; }
     .sb-card-header { background: $brand-blue; }
-    .sb-card-value { color: $brand-blue; }
+    .sb-card-footer { color: $brand-blue; }
     &.is-wild .sb-card-inner { border-style: dashed; }
 }
 

@@ -40,14 +40,9 @@
 //-----------------------------------------------------------------
 
 .is-discarded .sb-card {
-	// opacity: 0.6;
-	// transform: scale(0.9) translate(0,0);
 
 	@keyframes discard-card {
-	    0% {
-			// transform: scale(0.9) translate(0,0);
-			// transform: scale(1);
-	    }
+	    0% {}
 	    100% {
 	    	transform: scale(0.9) translate(0, -600px);
 	    }
@@ -63,13 +58,8 @@
 	}
 
 	animation: discard-card ease 0.5s 0.01s alternate 1 forwards,
-			   discard-card-destroy ease-out 0.4s 200ms alternate 1 forwards;
+			   discard-card-destroy ease 0.3s 200ms alternate 1 forwards;
 }
-
-// .has-loaded .sb-player-deck .sb-card-grid li {
-	// transform: translateX(0);
-	// transition: transform 1s ease 3s;
-// }
 
 //-----------------------------------------------------------------
 //
