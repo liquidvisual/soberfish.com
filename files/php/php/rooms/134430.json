@@ -1,0 +1,80 @@
+{
+    "room": {
+        "id": 134430,
+        "host": "1-578475-134430",
+        "dealer": "1-578475-134430",
+        "questions": [
+            "BLA3",
+            "BLA8",
+            "BLA7",
+            "BLA6",
+            "BLA9",
+            "BLA1",
+            "BLA4",
+            "BLA2",
+            "BLA5"
+        ],
+        "cards_in_play": [
+            "GRE13",
+            "GRE15"
+        ],
+        "timer": false,
+        "timer_duration": 6000,
+        "players": [
+            {
+                "id": "1-578475-134430",
+                "name": "P1",
+                "cash": "0",
+                "cards_active": [
+                    "GRE13",
+                    "GRE6",
+                    "ORA3",
+                    "GRE15",
+                    "BLU2",
+                    "ORA9",
+                    "ORA5",
+                    "GRE1",
+                    "GRE4",
+                    "GRE13",
+                    "ORA10",
+                    "ORA8",
+                    "GRE8",
+                    "GRE16",
+                    "GRE18",
+                    "GRE20",
+                    "ORA6",
+                    "GRE9"
+                ],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "2-538341-134430",
+                "name": "P2",
+                "cash": "0",
+                "cards_active": [
+                    "ORA1",
+                    "GRE13",
+                    "GRE13",
+                    "ORA4",
+                    "GRE19",
+                    "BLU3",
+                    "GRE14",
+                    "GRE20",
+                    "GRE3",
+                    "ORA6",
+                    "GRE11",
+                    "GRE12",
+                    "GRE14",
+                    "ORA3",
+                    "RED1",
+                    "GRE9",
+                    "BLU2",
+                    "GRE8"
+                ],
+                "cards_won": [],
+                "cards_rejected": []
+            }
+        ]
+    }
+}

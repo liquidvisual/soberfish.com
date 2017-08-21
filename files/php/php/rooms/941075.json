@@ -1,0 +1,86 @@
+{
+    "room": {
+        "id": 941075,
+        "host": "1-740502-941075",
+        "dealer": "1-740502-941075",
+        "questions": [
+            "BLA3",
+            "BLA9",
+            "BLA7",
+            "BLA6",
+            "BLA4",
+            "BLA1",
+            "BLA5",
+            "BLA8",
+            "BLA2"
+        ],
+        "cards_in_play": [
+            "GRE7",
+            "GRE12",
+            "GRE12",
+            "GRE17",
+            "GRE1",
+            "GRE13",
+            "GRE1",
+            "GRE11"
+        ],
+        "timer": false,
+        "timer_duration": 6000,
+        "players": [
+            {
+                "id": "1-740502-941075",
+                "name": "P1",
+                "cash": "0",
+                "cards_active": [
+                    "GRE1",
+                    "RED2",
+                    "RED1",
+                    "ORA3",
+                    "ORA7",
+                    "GRE11",
+                    "GRE16",
+                    "GRE13",
+                    "ORA6",
+                    "GRE15",
+                    "GRE7",
+                    "GRE6",
+                    "ORA2",
+                    "GRE8",
+                    "GRE17",
+                    "GRE12",
+                    "BLU2",
+                    "GRE13"
+                ],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "2-402435-941075",
+                "name": "P2",
+                "cash": "0",
+                "cards_active": [
+                    "GRE7",
+                    "GRE11",
+                    "GRE1",
+                    "ORA1",
+                    "GRE13",
+                    "GRE15",
+                    "GRE18",
+                    "GRE20",
+                    "RED2",
+                    "RED3",
+                    "GRE12",
+                    "ORA2",
+                    "GRE17",
+                    "ORA3",
+                    "RED1",
+                    "ORA7",
+                    "ORA6",
+                    "GRE5"
+                ],
+                "cards_won": [],
+                "cards_rejected": []
+            }
+        ]
+    }
+}

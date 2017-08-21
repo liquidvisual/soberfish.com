@@ -1,0 +1,423 @@
+[16-Jan-2017 03:46:59 America/Chicago] PHP Warning:  file_put_contents(/sessions/508862.json): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/get_passcode.php on line 17
+[16-Jan-2017 03:52:04 America/Chicago] PHP Warning:  file_put_contents(../sessions/272525.txt): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/get_passcode.php on line 17
+[16-Jan-2017 03:52:05 America/Chicago] PHP Warning:  file_put_contents(../sessions/545543.txt): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/get_passcode.php on line 17
+[16-Jan-2017 03:52:06 America/Chicago] PHP Warning:  file_put_contents(../sessions/422250.txt): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/get_passcode.php on line 17
+[16-Jan-2017 03:52:08 America/Chicago] PHP Warning:  file_put_contents(../sessions/160737.txt): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/get_passcode.php on line 17
+[16-Jan-2017 03:59:56 America/Chicago] PHP Warning:  file_put_contents(sessions/&quot;{
+			  &quot;game&quot;: {
+			    &quot;seed&quot;: 666,
+			    &quot;questions&quot;: [],
+			    &quot;cards_in_play&quot;: [],
+			    &quot;dealer&quot;: &quot;player-1&quot;,
+			    &quot;timer&quot;: false,
+			    &quot;timer_duration&quot;: 6000,
+			    &quot;players&quot;: [
+			      {
+			        &quot;name&quot;: &quot;player-1&quot;,
+			        &quot;cash&quot;: 0,
+			        &quot;cards_active&quot;: [],
+			        &quot;cards_won&quot;: [],
+			        &quot;cards_rejected&quot;: []
+			      }
+			    ]
+			  }
+			}&quot;.json): failed to open stream: File name too long in /home/liquidvi/public_html/soberfish.com/php/get_passcode.php on line 36
+[16-Jan-2017 04:05:47 America/Chicago] PHP Warning:  file_put_contents(sessions/&quot;{
+			  &quot;game&quot;: {
+			    &quot;seed&quot;: 666,
+			    &quot;questions&quot;: [],
+			    &quot;cards_in_play&quot;: [],
+			    &quot;dealer&quot;: &quot;player-1&quot;,
+			    &quot;timer&quot;: false,
+			    &quot;timer_duration&quot;: 6000,
+			    &quot;players&quot;: [
+			      {
+			        &quot;name&quot;: &quot;player-1&quot;,
+			        &quot;cash&quot;: 0,
+			        &quot;cards_active&quot;: [],
+			        &quot;cards_won&quot;: [],
+			        &quot;cards_rejected&quot;: []
+			      }
+			    ]
+			  }
+			}&quot;.json): failed to open stream: File name too long in /home/liquidvi/public_html/soberfish.com/php/get_passcode.php on line 36
+[16-Jan-2017 04:05:49 America/Chicago] PHP Warning:  file_put_contents(sessions/\&quot;{
+			  \&quot;game\&quot;: {
+			    \&quot;seed\&quot;: 666,
+			    \&quot;questions\&quot;: [],
+			    \&quot;cards_in_play\&quot;: [],
+			    \&quot;dealer\&quot;: \&quot;player-1\&quot;,
+			    \&quot;timer\&quot;: false,
+			    \&quot;timer_duration\&quot;: 6000,
+			    \&quot;players\&quot;: [
+			      {
+			        \&quot;name\&quot;: \&quot;player-1\&quot;,
+			        \&quot;cash\&quot;: 0,
+			        \&quot;cards_active\&quot;: [],
+			        \&quot;cards_won\&quot;: [],
+			        \&quot;cards_rejected\&quot;: []
+			      }
+			    ]
+			  }
+			}\&quot;.json): failed to open stream: File name too long in /home/liquidvi/public_html/soberfish.com/php/get_passcode.php on line 36
+[16-Jan-2017 04:06:00 America/Chicago] PHP Warning:  file_put_contents(sessions/\&quot;{
+			  \&quot;game\&quot;: {
+			    \&quot;seed\&quot;: 666,
+			    \&quot;questions\&quot;: [],
+			    \&quot;cards_in_play\&quot;: [],
+			    \&quot;dealer\&quot;: \&quot;player-1\&quot;,
+			    \&quot;timer\&quot;: false,
+			    \&quot;timer_duration\&quot;: 6000,
+			    \&quot;players\&quot;: [
+			      {
+			        \&quot;name\&quot;: \&quot;player-1\&quot;,
+			        \&quot;cash\&quot;: 0,
+			        \&quot;cards_active\&quot;: [],
+			        \&quot;cards_won\&quot;: [],
+			        \&quot;cards_rejected\&quot;: []
+			      }
+			    ]
+			  }
+			}\&quot;.json): failed to open stream: File name too long in /home/liquidvi/public_html/soberfish.com/php/get_passcode.php on line 36
+[16-Jan-2017 22:48:15 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 28
+[16-Jan-2017 22:48:15 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 28
+[16-Jan-2017 22:53:05 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 32
+[16-Jan-2017 22:53:06 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 32
+[16-Jan-2017 22:53:40 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 32
+[16-Jan-2017 22:53:41 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 32
+[16-Jan-2017 23:10:52 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 32
+[16-Jan-2017 23:13:06 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 34
+[16-Jan-2017 23:14:13 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 34
+[16-Jan-2017 23:14:14 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 34
+[16-Jan-2017 23:14:40 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 27
+[16-Jan-2017 23:14:42 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 27
+[16-Jan-2017 23:14:45 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 27
+[16-Jan-2017 23:14:54 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 34
+[16-Jan-2017 23:15:24 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 34
+[16-Jan-2017 23:15:34 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 34
+[16-Jan-2017 23:15:37 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 34
+[16-Jan-2017 23:40:55 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 45
+[17-Jan-2017 01:11:06 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 60
+[17-Jan-2017 01:11:36 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 60
+[17-Jan-2017 01:11:41 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 60
+[17-Jan-2017 01:11:59 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 60
+[17-Jan-2017 01:12:00 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 60
+[17-Jan-2017 01:12:22 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 60
+[17-Jan-2017 01:12:22 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 60
+[17-Jan-2017 01:12:53 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 60
+[17-Jan-2017 01:12:54 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 60
+[17-Jan-2017 01:13:13 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 62
+[17-Jan-2017 01:13:14 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 62
+[17-Jan-2017 01:15:22 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 63
+[17-Jan-2017 01:15:22 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 63
+[17-Jan-2017 01:15:22 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 63
+[17-Jan-2017 01:15:22 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 63
+[17-Jan-2017 01:15:23 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 63
+[17-Jan-2017 01:15:23 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 63
+[17-Jan-2017 01:15:23 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 63
+[17-Jan-2017 01:15:23 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 63
+[17-Jan-2017 01:16:03 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 65
+[17-Jan-2017 01:16:03 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 65
+[17-Jan-2017 01:16:03 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 65
+[17-Jan-2017 01:16:03 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 65
+[17-Jan-2017 01:16:53 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 65
+[17-Jan-2017 01:16:53 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 65
+[17-Jan-2017 01:16:53 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 65
+[17-Jan-2017 01:16:53 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 65
+[17-Jan-2017 01:16:54 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 65
+[17-Jan-2017 01:16:54 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 65
+[17-Jan-2017 01:16:54 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 65
+[17-Jan-2017 01:16:54 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 65
+[17-Jan-2017 01:30:50 America/Chicago] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 63
+[17-Jan-2017 01:42:39 America/Chicago] PHP Parse error:  syntax error, unexpected '$str' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 88
+[17-Jan-2017 03:26:58 America/Chicago] PHP Warning:  file_get_contents(rooms/.json): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/room_create.php on line 14
+[19-Jan-2017 20:15:36 America/Chicago] PHP Warning:  file_get_contents(rooms/.json): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/room_create.php on line 14
+[23-Jan-2017 07:16:18 America/Chicago] PHP Warning:  file_get_contents(rooms/.json): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/room_create.php on line 14
+[23-Jan-2017 07:27:39 America/Chicago] PHP Warning:  file_get_contents(rooms/312116.json): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/room_create.php on line 20
+[23-Jan-2017 07:27:47 America/Chicago] PHP Warning:  file_get_contents(rooms/115948.json): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/room_create.php on line 20
+[23-Jan-2017 07:29:40 America/Chicago] PHP Warning:  file_get_contents(rooms/627710.json): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/room_create.php on line 20
+[23-Jan-2017 07:59:55 America/Chicago] PHP Warning:  file_get_contents(rooms/640352.json): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 20
+[23-Jan-2017 07:59:55 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 51
+[23-Jan-2017 07:59:59 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 51
+[23-Jan-2017 08:07:30 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 51
+[23-Jan-2017 08:07:38 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 51
+[23-Jan-2017 08:11:33 America/Chicago] PHP Parse error:  syntax error, unexpected '$str' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 59
+[23-Jan-2017 08:11:35 America/Chicago] PHP Parse error:  syntax error, unexpected '$str' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 59
+[23-Jan-2017 08:11:46 America/Chicago] PHP Parse error:  syntax error, unexpected '$str' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 59
+[23-Jan-2017 08:14:51 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 51
+[23-Jan-2017 08:14:54 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 51
+[23-Jan-2017 08:17:58 America/Chicago] PHP Parse error:  syntax error, unexpected '{', expecting ']' in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 57
+[23-Jan-2017 09:19:52 America/Chicago] PHP Warning:  Missing argument 1 for get_black_cards(), called in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 53 and defined in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 21
+[23-Jan-2017 09:19:52 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 32
+[23-Jan-2017 09:19:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:20:05 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 32
+[23-Jan-2017 09:20:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:23:04 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 32
+[23-Jan-2017 09:23:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:23:14 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 32
+[23-Jan-2017 09:23:14 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:23:16 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 32
+[23-Jan-2017 09:23:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:23:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:23:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:24:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:24:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:24:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:24:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:26:01 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:26:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 34
+[23-Jan-2017 09:29:18 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 35
+[23-Jan-2017 09:29:18 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 35
+[23-Jan-2017 09:29:18 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 35
+[23-Jan-2017 10:29:42 America/Chicago] PHP Parse error:  syntax error, unexpected '"That room doesn't exist!"' (T_CONSTANT_ENCAPSED_STRING) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 28
+[23-Jan-2017 10:31:01 America/Chicago] PHP Parse error:  syntax error, unexpected '"That room doesn't exist!"' (T_CONSTANT_ENCAPSED_STRING) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 28
+[23-Jan-2017 10:31:03 America/Chicago] PHP Parse error:  syntax error, unexpected '"That room doesn't exist!"' (T_CONSTANT_ENCAPSED_STRING) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 28
+[23-Jan-2017 10:31:40 America/Chicago] PHP Parse error:  syntax error, unexpected '"That room doesn't exist!"' (T_CONSTANT_ENCAPSED_STRING) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 28
+[23-Jan-2017 10:31:42 America/Chicago] PHP Parse error:  syntax error, unexpected '"That room doesn't exist!"' (T_CONSTANT_ENCAPSED_STRING) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 28
+[23-Jan-2017 10:33:50 America/Chicago] PHP Parse error:  syntax error, unexpected '"That room doesn't exist!"' (T_CONSTANT_ENCAPSED_STRING) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 30
+[23-Jan-2017 10:35:48 America/Chicago] PHP Parse error:  syntax error, unexpected '"That room doesn't exist!"' (T_CONSTANT_ENCAPSED_STRING) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 30
+[23-Jan-2017 10:35:49 America/Chicago] PHP Parse error:  syntax error, unexpected '"That room doesn't exist!"' (T_CONSTANT_ENCAPSED_STRING) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 30
+[23-Jan-2017 10:37:11 America/Chicago] PHP Parse error:  syntax error, unexpected '"That room doesnt exist!"' (T_CONSTANT_ENCAPSED_STRING) in /home/liquidvi/public_html/soberfish.com/php/player_add.php on line 30
+[24-Jan-2017 01:28:13 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/liquidvi/public_html/soberfish.com/php/room_create.php on line 61
+[24-Jan-2017 01:28:13 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/liquidvi/public_html/soberfish.com/php/room_create.php:61) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 3
+[24-Jan-2017 01:28:13 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/liquidvi/public_html/soberfish.com/php/room_create.php:61) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 10
+[24-Jan-2017 01:28:46 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/liquidvi/public_html/soberfish.com/php/room_create.php on line 61
+[24-Jan-2017 01:28:46 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/liquidvi/public_html/soberfish.com/php/room_create.php:61) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 3
+[24-Jan-2017 01:28:46 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/liquidvi/public_html/soberfish.com/php/room_create.php:61) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 10
+[25-Jan-2017 04:21:40 America/Chicago] PHP Warning:  split() expects at least 2 parameters, 1 given in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 25
+[25-Jan-2017 04:21:40 America/Chicago] PHP Fatal error:  Call to undefined function pop() in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 25
+[25-Jan-2017 04:22:21 America/Chicago] PHP Warning:  split() expects at least 2 parameters, 1 given in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 25
+[25-Jan-2017 04:22:21 America/Chicago] PHP Fatal error:  Call to undefined function pop() in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 25
+[25-Jan-2017 04:23:07 America/Chicago] PHP Warning:  split() expects at least 2 parameters, 1 given in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 25
+[25-Jan-2017 04:23:58 America/Chicago] PHP Fatal error:  Call to undefined function typeof() in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 27
+[25-Jan-2017 04:25:50 America/Chicago] PHP Warning:  explode() expects at least 2 parameters, 1 given in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 25
+[25-Jan-2017 04:26:21 America/Chicago] PHP Fatal error:  Call to undefined function pop() in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 27
+[25-Jan-2017 04:26:58 America/Chicago] PHP Fatal error:  Call to undefined function pop() in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 27
+[25-Jan-2017 04:27:13 America/Chicago] PHP Fatal error:  Call to undefined function pop() in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 27
+[25-Jan-2017 04:31:29 America/Chicago] PHP Strict Standards:  Only variables should be passed by reference in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 25
+[25-Jan-2017 04:34:09 America/Chicago] PHP Strict Standards:  Only variables should be passed by reference in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 25
+[26-Jan-2017 00:51:52 America/Chicago] PHP Parse error:  syntax error, unexpected '=' in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 48
+[26-Jan-2017 01:02:00 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 35
+[26-Jan-2017 01:02:25 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 35
+[26-Jan-2017 01:02:46 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 35
+[26-Jan-2017 01:03:41 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 35
+[26-Jan-2017 02:02:03 America/Chicago] PHP Fatal error:  Cannot redeclare get_random_cards() (previously declared in /home/liquidvi/public_html/soberfish.com/php/cards_get.php:13) in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 50
+[26-Jan-2017 02:03:59 America/Chicago] PHP Fatal error:  Cannot redeclare get_random_cards() (previously declared in /home/liquidvi/public_html/soberfish.com/php/cards_get.php:13) in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 50
+[26-Jan-2017 02:38:27 America/Chicago] PHP Fatal error:  Cannot redeclare get_random_cards() (previously declared in /home/liquidvi/public_html/soberfish.com/php/cards_get.php:13) in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 50
+[26-Jan-2017 02:39:28 America/Chicago] PHP Fatal error:  Cannot redeclare get_random_cards() (previously declared in /home/liquidvi/public_html/soberfish.com/php/cards_get.php:13) in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 50
+[26-Jan-2017 02:42:06 America/Chicago] PHP Fatal error:  Cannot redeclare get_random_cards() (previously declared in /home/liquidvi/public_html/soberfish.com/php/cards_get.php:13) in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 50
+[26-Jan-2017 02:48:18 America/Chicago] PHP Fatal error:  Cannot redeclare get_random_cards() (previously declared in /home/liquidvi/public_html/soberfish.com/php/cards_get.php:13) in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 40
+[26-Jan-2017 02:51:04 America/Chicago] PHP Fatal error:  Cannot redeclare get_random_cards() (previously declared in /home/liquidvi/public_html/soberfish.com/php/cards_get.php:13) in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 18
+[26-Jan-2017 02:57:50 America/Chicago] PHP Fatal error:  Cannot redeclare get_random_cards_lah() (previously declared in /home/liquidvi/public_html/soberfish.com/php/cards_get.php:13) in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 18
+[26-Jan-2017 02:59:25 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards_lah() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 76
+[26-Jan-2017 03:28:03 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 76
+[26-Jan-2017 03:28:57 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 76
+[26-Jan-2017 03:30:13 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 76
+[26-Jan-2017 03:32:26 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 76
+[26-Jan-2017 03:33:44 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 76
+[26-Jan-2017 03:35:24 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 76
+[26-Jan-2017 03:37:20 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 76
+[26-Jan-2017 03:50:03 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 76
+[26-Jan-2017 03:50:44 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 76
+[26-Jan-2017 03:52:08 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 76
+[26-Jan-2017 04:02:09 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 78
+[26-Jan-2017 04:07:20 America/Chicago] PHP Fatal error:  Cannot redeclare get_random_cards() (previously declared in /home/liquidvi/public_html/soberfish.com/php/cards_get.php:13) in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 47
+[26-Jan-2017 07:00:22 America/Chicago] PHP Fatal error:  Cannot redeclare get_random_cards() (previously declared in /home/liquidvi/public_html/soberfish.com/php/cards_get.php:13) in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 47
+[26-Jan-2017 19:07:43 America/Chicago] PHP Fatal error:  Cannot redeclare get_random_cards() (previously declared in /home/liquidvi/public_html/soberfish.com/php/cards_get.php:13) in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 47
+[26-Jan-2017 21:31:22 America/Chicago] PHP Parse error:  syntax error, unexpected '>', expecting ')' in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 66
+[26-Jan-2017 21:31:26 America/Chicago] PHP Parse error:  syntax error, unexpected '>', expecting ')' in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 66
+[26-Jan-2017 21:39:10 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 70
+[26-Jan-2017 21:39:13 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 70
+[26-Jan-2017 21:39:17 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 70
+[26-Jan-2017 21:39:33 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 100
+[26-Jan-2017 21:39:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 102
+[26-Jan-2017 21:39:33 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/liquidvi/public_html/soberfish.com/php/cards_get.php:100) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 10
+[26-Jan-2017 21:39:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 79
+[26-Jan-2017 21:39:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 79
+[26-Jan-2017 21:39:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 79
+[26-Jan-2017 21:39:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 79
+[26-Jan-2017 21:44:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 84
+[26-Jan-2017 21:44:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 84
+[26-Jan-2017 21:44:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 84
+[26-Jan-2017 21:44:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 84
+[26-Jan-2017 21:54:11 America/Chicago] PHP Warning:  file_get_contents(room.json): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 14
+[26-Jan-2017 21:54:11 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/liquidvi/public_html/soberfish.com/php/cards_get.php:14) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 10
+[26-Jan-2017 21:54:36 America/Chicago] PHP Warning:  file_get_contents(room.json): failed to open stream: No such file or directory in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 14
+[26-Jan-2017 21:54:36 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/liquidvi/public_html/soberfish.com/php/cards_get.php:14) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 10
+[26-Jan-2017 23:03:25 America/Chicago] PHP Parse error:  syntax error, unexpected 'array_push' (T_STRING) in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 42
+[26-Jan-2017 23:06:54 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 42
+[26-Jan-2017 23:06:58 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 42
+[26-Jan-2017 23:07:09 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 42
+[26-Jan-2017 23:07:40 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 42
+[26-Jan-2017 23:08:05 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 42
+[26-Jan-2017 23:09:03 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 42
+[26-Jan-2017 23:10:08 America/Chicago] PHP Warning:  Illegal string offset 'room' in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 40
+[26-Jan-2017 23:10:08 America/Chicago] PHP Warning:  Illegal string offset 'cards_in_play' in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 40
+[26-Jan-2017 23:11:52 America/Chicago] PHP Warning:  Illegal string offset 'room' in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 40
+[26-Jan-2017 23:11:52 America/Chicago] PHP Warning:  Illegal string offset 'cards_in_play' in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 40
+[26-Jan-2017 23:12:28 America/Chicago] PHP Warning:  Illegal string offset 'room' in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 40
+[26-Jan-2017 23:12:28 America/Chicago] PHP Fatal error:  Cannot use string offset as an array in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 40
+[26-Jan-2017 23:12:42 America/Chicago] PHP Warning:  Illegal string offset 'room' in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 40
+[26-Jan-2017 23:12:42 America/Chicago] PHP Fatal error:  Cannot use string offset as an array in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 40
+[26-Jan-2017 23:16:11 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 41
+[26-Jan-2017 23:18:20 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 41
+[26-Jan-2017 23:19:28 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, string given in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 41
+[26-Jan-2017 23:20:45 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_set_by_id.php on line 40
+[26-Jan-2017 23:51:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:51:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:51:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:51:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:51:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:51:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:51:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:51:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:53:49 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:49 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:49 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:50 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:51 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:52 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:52 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:52 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:52 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:52 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:52 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:52 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:52 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:52 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:52 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:53:52 America/Chicago] PHP Warning:  filemtime(): stat failed for rooms/863886.json in /home/liquidvi/public_html/soberfish.com/php/room_poll_updates.php on line 61
+[26-Jan-2017 23:55:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:55:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:55:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:55:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:58:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:58:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:58:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[26-Jan-2017 23:58:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:04:07 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:04:07 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:04:07 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:04:07 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:05:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:05:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:05:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:05:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:06:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:06:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:06:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:06:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:06:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:06:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:06:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:06:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:06:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:06:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:06:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:06:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:07:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:07:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:07:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:07:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:07:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:07:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:07:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:07:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:12:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:12:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:12:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:12:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:12:43 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:12:43 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:12:43 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:12:43 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:13:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:13:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:13:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:13:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 94
+[27-Jan-2017 00:14:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 86
+[27-Jan-2017 00:14:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 86
+[27-Jan-2017 00:14:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 86
+[27-Jan-2017 00:14:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 86
+[27-Jan-2017 00:14:10 America/Chicago] PHP Parse error:  syntax error, unexpected 'get_random_cards' (T_STRING) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 82
+[27-Jan-2017 00:14:42 America/Chicago] PHP Parse error:  syntax error, unexpected 'gettype' (T_STRING) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 82
+[27-Jan-2017 00:14:58 America/Chicago] PHP Parse error:  syntax error, unexpected 'get_random_cards' (T_STRING) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 82
+[27-Jan-2017 00:15:11 America/Chicago] PHP Parse error:  syntax error, unexpected 'get_random_cards' (T_STRING) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 82
+[27-Jan-2017 00:15:12 America/Chicago] PHP Parse error:  syntax error, unexpected 'get_random_cards' (T_STRING) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 82
+[27-Jan-2017 00:15:23 America/Chicago] PHP Parse error:  syntax error, unexpected 'get_random_cards' (T_STRING) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 82
+[27-Jan-2017 00:15:25 America/Chicago] PHP Parse error:  syntax error, unexpected 'get_random_cards' (T_STRING) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 82
+[27-Jan-2017 00:15:43 America/Chicago] PHP Parse error:  syntax error, unexpected 'get_random_cards' (T_STRING) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 82
+[27-Jan-2017 00:15:45 America/Chicago] PHP Parse error:  syntax error, unexpected 'get_random_cards' (T_STRING) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 82
+[27-Jan-2017 00:15:54 America/Chicago] PHP Parse error:  syntax error, unexpected 'get_random_cards' (T_STRING) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 82
+[27-Jan-2017 00:16:28 America/Chicago] PHP Parse error:  syntax error, unexpected 'get_random_cards' (T_STRING) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 82
+[27-Jan-2017 00:16:54 America/Chicago] PHP Parse error:  syntax error, unexpected '$wot' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 83
+[27-Jan-2017 00:16:56 America/Chicago] PHP Parse error:  syntax error, unexpected '$wot' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 83
+[27-Jan-2017 00:17:18 America/Chicago] PHP Parse error:  syntax error, unexpected '$wot' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 83
+[27-Jan-2017 00:17:19 America/Chicago] PHP Parse error:  syntax error, unexpected '$wot' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 83
+[27-Jan-2017 00:18:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$wot' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 83
+[27-Jan-2017 00:18:01 America/Chicago] PHP Parse error:  syntax error, unexpected '$wot' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 83
+[27-Jan-2017 00:18:08 America/Chicago] PHP Parse error:  syntax error, unexpected '$wot' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 83
+[27-Jan-2017 00:18:10 America/Chicago] PHP Parse error:  syntax error, unexpected '$wot' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 83
+[27-Jan-2017 00:18:31 America/Chicago] PHP Parse error:  syntax error, unexpected '$wot' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 83
+[27-Jan-2017 00:18:51 America/Chicago] PHP Parse error:  syntax error, unexpected '$wot' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 83
+[27-Jan-2017 00:18:53 America/Chicago] PHP Parse error:  syntax error, unexpected '$wot' (T_VARIABLE) in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 83
+[27-Jan-2017 00:20:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 86
+[27-Jan-2017 00:20:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 86
+[27-Jan-2017 00:20:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 86
+[27-Jan-2017 00:20:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 86
+[27-Jan-2017 00:21:21 America/Chicago] PHP Warning:  array_merge(): Argument #1 is not an array in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 37
+[27-Jan-2017 00:21:21 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 50
+[27-Jan-2017 00:21:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 54
+[27-Jan-2017 00:21:22 America/Chicago] PHP Warning:  array_merge(): Argument #1 is not an array in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 37
+[27-Jan-2017 00:21:22 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 50
+[27-Jan-2017 00:21:22 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 54
+[27-Jan-2017 00:21:24 America/Chicago] PHP Warning:  array_merge(): Argument #1 is not an array in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 37
+[27-Jan-2017 00:21:24 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 50
+[27-Jan-2017 00:21:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 54
+[27-Jan-2017 00:21:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:21:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:21:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:21:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:21:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:21:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:21:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:21:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:23:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:23:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:23:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:23:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:24:01 America/Chicago] PHP Fatal error:  Call to undefined function get_random_cards() in /home/liquidvi/public_html/soberfish.com/php/room_join_by_id.php on line 82
+[27-Jan-2017 00:24:03 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:24:03 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:24:03 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:24:03 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 88
+[27-Jan-2017 00:24:41 America/Chicago] PHP Warning:  array_merge(): Argument #1 is not an array in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 37
+[27-Jan-2017 00:24:41 America/Chicago] PHP Warning:  shuffle() expects parameter 1 to be array, null given in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 50
+[27-Jan-2017 00:24:41 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 54
+[27-Jan-2017 00:29:53 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/liquidvi/public_html/soberfish.com/php/cards_get.php on line 36

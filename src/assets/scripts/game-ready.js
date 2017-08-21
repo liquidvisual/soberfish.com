@@ -69,6 +69,7 @@ function initGame() {
 
                     // Render player HUD
 
+                    renderRoomID();
                     renderPlayerName(obj);
                     renderPlayerCardsAmount(obj);
                     renderPlayerCards(obj);
@@ -147,18 +148,17 @@ function renderPlayerCards(obj) {
 
         html += '<li>';
         html +=     '<div class="sb-card '+isColor+' '+isWild+'" data-wild="true" data-value="10" data-id="'+cardID+'">';
-        html +=         '<div class="sb-card-inner">'
-        html +=             '<header class="sb-card-header">'
-        html +=                 '<span class="text">'+cardTypeAlias+
-        '</span>'
-        html +=             '</header>'
-        html +=             '<div class="sb-card-text">'
-        html +=                 '<p>'+cardText+'</p>'
-        html +=             '</div>'
-        html +=             '<div class="sb-card-value">'
-        html +=                 '<span class="text">'+cardValue+'</span>'
-        html +=             '</div>'
-        html +=         '</div>'
+        html +=         '<div class="sb-card-inner">';
+        html +=             '<header class="sb-card-header">';
+        html +=                 '<span class="text">'+cardTypeAlias+'</span>';
+        html +=             '</header>';
+        html +=             '<div class="sb-card-text">';
+        html +=                 '<p>'+cardText+'</p>';
+        html +=             '</div>';
+        html +=             '<div class="sb-card-value">';
+        html +=                 '<span class="text">'+cardValue+'</span>';
+        html +=             '</div>';
+        html +=         '</div>';
         html +=     '</div>';
         html += '</li>';
     }
@@ -178,7 +178,8 @@ function renderPlayerCards(obj) {
     $('.sb-card.is-green').click(function(){
         var text = $('.sb-card-text p', $(this)).text();
         var cardID = $(this).attr('data-id');
-        $(this).addClass('is-discarded');
+        $(this).parent().addClass('is-discarded');
+
         // alert(cardID);
         var jqxhr = $.get('http://www.liquidvisual.net/soberfish.com/php/cards_set_by_id.php', {'playerID': PLAYER_ID, 'cardID': cardID })
         .done(
@@ -196,6 +197,16 @@ function renderPlayerCards(obj) {
 function renderPlayerName(obj) {
     var player = getPlayer(obj);
     $('[data-player-name]').text(player.name);
+}
+
+//-----------------------------------------------------------------
+// RENDER ROOM ID
+//-----------------------------------------------------------------
+
+function renderRoomID() {
+    var roomID = localStorage.getItem("roomID");
+    var roomID = roomID.slice(0, 3) + " " + roomID.slice(3)
+    $('[data-room-id]').append('<i class="fa fa-hand-o-right"></i> ' +roomID);
 }
 
 //==================================================

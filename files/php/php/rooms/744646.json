@@ -1,0 +1,36 @@
+{
+    "room": {
+        "id": 744646,
+        "host": "1-180061-744646",
+        "dealer": "1-180061-744646",
+        "questions": [
+            "BLA3",
+            "BLA1",
+            "BLA2"
+        ],
+        "cards_in_play": [],
+        "timer": false,
+        "timer_duration": 6000,
+        "players": [
+            {
+                "id": "1-180061-744646",
+                "name": "P1",
+                "cash": "0",
+                "cards_active": [
+                    "ORA4",
+                    "ORA6",
+                    "RED1",
+                    "ORA3",
+                    "ORA8",
+                    "BLU1",
+                    "ORA9",
+                    "ORA2",
+                    "GRE4",
+                    "GRE1"
+                ],
+                "cards_won": [],
+                "cards_rejected": []
+            }
+        ]
+    }
+}

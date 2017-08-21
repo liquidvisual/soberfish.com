@@ -36,33 +36,34 @@
 }
 
 //-----------------------------------------------------------------
-//
+// https://www.w3schools.com/cssref/css3_pr_animation.asp
 //-----------------------------------------------------------------
 
-.sb-card {
-	position: relative;
-	// transition: transform ease 1s;
-	z-index: 999;
-}
-
-.sb-card.is-discarded {
-	opacity: 0.6;
-	transform: scale(0.9) translate(0,0);
+.is-discarded .sb-card {
+	// opacity: 0.6;
+	// transform: scale(0.9) translate(0,0);
 
 	@keyframes discard-card {
 	    0% {
-			transform: scale(0.9) translate(0,0);
+			// transform: scale(0.9) translate(0,0);
+			// transform: scale(1);
 	    }
 	    100% {
 	    	transform: scale(0.9) translate(0, -600px);
-	    	max-height: 0;
-	    	max-width: 0;
-	    	visibility: hidden;
-	    	overflow: hidden;
 	    }
 	}
 
-	animation: discard-card 0.5s ease 0s alternate 1 forwards;
+	@keyframes discard-card-destroy {
+	    0% {}
+	    100% {
+			width: 0;
+			padding: 0;
+			margin: 0;
+	    }
+	}
+
+	animation: discard-card ease 0.5s 0.01s alternate 1 forwards,
+			   discard-card-destroy ease-out 0.4s 200ms alternate 1 forwards;
 }
 
 // .has-loaded .sb-player-deck .sb-card-grid li {

@@ -1,0 +1,189 @@
+{
+    "room": {
+        "id": 112411,
+        "host": "1-700530-112411",
+        "dealer": "1-700530-112411",
+        "questions": [
+            "BLA2",
+            "BLA3",
+            "BLA1"
+        ],
+        "cards_in_play": [
+            "GRE3",
+            "GRE5"
+        ],
+        "timer": false,
+        "timer_duration": 6000,
+        "players": [
+            {
+                "id": "1-700530-112411",
+                "name": "P1",
+                "cash": "0",
+                "cards_active": [
+                    "ORA4",
+                    "ORA8",
+                    "ORA10",
+                    "ORA1",
+                    "RED2",
+                    "GRE10",
+                    "RED3",
+                    "BLU2",
+                    "BLU1",
+                    "BLU3"
+                ],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "2-564253-112411",
+                "name": "P2",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "3-722415-112411",
+                "name": "P3",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "4-661529-112411",
+                "name": "P4",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "5-730131-112411",
+                "name": "P5",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "6-637759-112411",
+                "name": "P6",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "7-492501-112411",
+                "name": "P7",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "8-578607-112411",
+                "name": "P8",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "9-856133-112411",
+                "name": "P9",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "10-401707-112411",
+                "name": "P10",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "11-743317-112411",
+                "name": "P11",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "12-559837-112411",
+                "name": "P12",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "13-144723-112411",
+                "name": "P13",
+                "cash": "0",
+                "cards_active": "fuck",
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "14-444478-112411",
+                "name": "P14",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "15-121245-112411",
+                "name": "P15",
+                "cash": "0",
+                "cards_active": [],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "16-506429-112411",
+                "name": "P16",
+                "cash": "0",
+                "cards_active": [
+                    "ORA8",
+                    "BLU2",
+                    "GRE3",
+                    "ORA9",
+                    "RED3",
+                    "RED1",
+                    "GRE5",
+                    "GRE7",
+                    "ORA10",
+                    "GRE2"
+                ],
+                "cards_won": [],
+                "cards_rejected": []
+            },
+            {
+                "id": "17-288182-112411",
+                "name": "P17",
+                "cash": "0",
+                "cards_active": [
+                    "RED1",
+                    "GRE4",
+                    "ORA8",
+                    "GRE6",
+                    "ORA2",
+                    "ORA1",
+                    "ORA3",
+                    "GRE2",
+                    "GRE9",
+                    "GRE7"
+                ],
+                "cards_won": [],
+                "cards_rejected": []
+            }
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "room": {
+        "id": 757580,
+        "host": "1-357471-757580",
+        "dealer": "1-357471-757580",
+        "questions": [
+            "BLA1",
+            "BLA6",
+            "BLA5",
+            "BLA4",
+            "BLA2",
+            "BLA7",
+            "BLA9",
+            "BLA3",
+            "BLA8"
+        ],
+        "cards_in_play": [],
+        "timer": false,
+        "timer_duration": 6000,
+        "players": [
+            {
+                "id": "1-357471-757580",
+                "name": "P1",
+                "cash": "0",
+                "cards_active": [
+                    "GRE7",
+                    "GRE9",
+                    "GRE2",
+                    "GRE12",
+                    "GRE19",
+                    "GRE17",
+                    "GRE15",
+                    "BLU1",
+                    "GRE11",
+                    "ORA4",
+                    "RED1",
+                    "GRE5",
+                    "GRE3",
+                    "GRE8",
+                    "ORA1",
+                    "GRE1",
+                    "GRE20",
+                    "GRE14"
+                ],
+                "cards_won": [],
+                "cards_rejected": []
+            }
+        ]
+    }
+}
